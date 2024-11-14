@@ -1,0 +1,134 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.0
+    cli_version: 0.17.9
+    framework: huggingface
+    huggingface_version: 4.46.2
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1731335844
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      - 30
+      - 49
+      - 51
+      - 53
+      - 55
+      - 71
+      - 84
+      - 98
+      - 105
+      2:
+      - 1
+      - 5
+      - 11
+      - 30
+      - 49
+      - 51
+      - 53
+      - 55
+      - 71
+      - 84
+      - 98
+      - 105
+      3:
+      - 2
+      - 7
+      - 14
+      - 23
+      4: 3.12.0
+      5: 0.17.9
+      6: 4.46.2
+      8:
+      - 5
+      13: linux-x86_64
+    m:
+    - 1: iter
+      6:
+      - 3
+    - 1: train/eval_loss
+      5: 1
+      6:
+      - 1
+    - 1: train/eval_model_preparation_time
+      5: 1
+      6:
+      - 1
+    - 1: train/eval_runtime
+      5: 1
+      6:
+      - 1
+    - 1: train/eval_samples_per_second
+      5: 1
+      6:
+      - 1
+    - 1: train/eval_steps_per_second
+      5: 1
+      6:
+      - 1
+    - 1: eval/eval_loss
+      5: 1
+      6:
+      - 1
+    - 1: eval/eval_model_preparation_time
+      5: 1
+      6:
+      - 1
+    - 1: eval/eval_runtime
+      5: 1
+      6:
+      - 1
+    - 1: eval/eval_samples_per_second
+      5: 1
+      6:
+      - 1
+    - 1: eval/eval_steps_per_second
+      5: 1
+      6:
+      - 1
+    - 1: train/loss
+      5: 1
+      6:
+      - 1
+    - 1: train/grad_norm
+      5: 1
+      6:
+      - 1
+    - 1: train/learning_rate
+      5: 1
+      6:
+      - 1
+    - 1: train/epoch
+      5: 1
+      6:
+      - 1
+    - 1: eval/epoch
+      5: 1
+      6:
+      - 1
+    - 1: train/train_runtime
+      5: 1
+      6:
+      - 1
+    - 1: train/train_samples_per_second
+      5: 1
+      6:
+      - 1
+    - 1: train/train_steps_per_second
+      5: 1
+      6:
+      - 1
+    - 1: train/total_flos
+      5: 1
+      6:
+      - 1
+    - 1: train/train_loss
+      5: 1
+      6:
+      - 1

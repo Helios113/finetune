@@ -1,0 +1,125 @@
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/datasets/utils/_dill.py:379: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
+  obj.co_lnotab,  # for < python 3.10 [not counted in args]
+Map: 100%|██████████| 38/38 [00:00<00:00, 1384.80 examples/s]
+Map: 100%|██████████| 2/2 [00:00<00:00, 129.01 examples/s]
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/trl/trainer/sft_trainer.py:323: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `CustomSFTTrainer.__init__`. Use `processing_class` instead.
+  super().__init__(
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+max_steps is given, it will override any value given in num_train_epochs
+100%|██████████| 1/1 [00:00<00:00, 914.59it/s]
+ 11%|█         | 11/100 [00:01<00:08,  9.93it/s]
+{'loss': 3.0154, 'grad_norm': 18.700170516967773, 'learning_rate': 4.998766400914329e-05, 'epoch': 0.1}
+{'loss': 1.9419, 'grad_norm': 29.763675689697266, 'learning_rate': 4.995066821070679e-05, 'epoch': 0.2}
+{'loss': 3.7315, 'grad_norm': 19.88726043701172, 'learning_rate': 4.9889049115077005e-05, 'epoch': 0.3}
+{'loss': 2.3143, 'grad_norm': 20.47281837463379, 'learning_rate': 4.980286753286195e-05, 'epoch': 0.4}
+{'loss': 2.3853, 'grad_norm': 36.34245681762695, 'learning_rate': 4.9692208514878444e-05, 'epoch': 0.5}
+{'loss': 2.2173, 'grad_norm': 43.03890609741211, 'learning_rate': 4.9557181268217227e-05, 'epoch': 0.6}
+{'loss': 3.2381, 'grad_norm': 26.748903274536133, 'learning_rate': 4.939791904846869e-05, 'epoch': 0.7}
+{'loss': 1.2308, 'grad_norm': 12.555137634277344, 'learning_rate': 4.9214579028215776e-05, 'epoch': 0.8}
+{'loss': 0.7831, 'grad_norm': 11.455418586730957, 'learning_rate': 4.900734214192358e-05, 'epoch': 0.9}
+{'loss': 2.0224, 'grad_norm': 20.389413833618164, 'learning_rate': 4.877641290737884e-05, 'epoch': 1.0}
+{'loss': 2.1856, 'grad_norm': 39.26932144165039, 'learning_rate': 4.852201922385564e-05, 'epoch': 1.1}
+{'loss': 1.9818, 'grad_norm': 17.86058807373047, 'learning_rate': 4.8244412147206284e-05, 'epoch': 1.2}
+{'loss': 2.7979, 'grad_norm': 13.972784996032715, 'learning_rate': 4.794386564209953e-05, 'epoch': 1.3}
+{'loss': 1.2664, 'grad_norm': 9.697383880615234, 'learning_rate': 4.762067631165049e-05, 'epoch': 1.4}
+{'loss': 1.648, 'grad_norm': 16.95604705810547, 'learning_rate': 4.72751631047092e-05, 'epoch': 1.5}
+
+ 32%|███▏      | 32/100 [00:03<00:06,  9.95it/s]
+{'loss': 3.2715, 'grad_norm': 16.640602111816406, 'learning_rate': 4.65185506750986e-05, 'epoch': 1.7}
+{'loss': 3.0243, 'grad_norm': 15.086445808410645, 'learning_rate': 4.610819813755038e-05, 'epoch': 1.8}
+{'loss': 1.1852, 'grad_norm': 22.622669219970703, 'learning_rate': 4.567701435686404e-05, 'epoch': 1.9}
+{'loss': 1.7378, 'grad_norm': 64.16470336914062, 'learning_rate': 4.522542485937369e-05, 'epoch': 2.0}
+{'loss': 1.4182, 'grad_norm': 10.091609001159668, 'learning_rate': 4.4753875309392266e-05, 'epoch': 2.1}
+{'loss': 0.7685, 'grad_norm': 11.80897331237793, 'learning_rate': 4.426283106939474e-05, 'epoch': 2.2}
+{'loss': 3.1816, 'grad_norm': 41.851985931396484, 'learning_rate': 4.375277674076149e-05, 'epoch': 2.3}
+{'loss': 2.1545, 'grad_norm': 40.19454574584961, 'learning_rate': 4.3224215685535294e-05, 'epoch': 2.4}
+{'loss': 2.1344, 'grad_norm': 27.985393524169922, 'learning_rate': 4.267766952966369e-05, 'epoch': 2.5}
+{'loss': 2.4551, 'grad_norm': 19.203567504882812, 'learning_rate': 4.211367764821722e-05, 'epoch': 2.6}
+{'loss': 3.1148, 'grad_norm': 21.623720169067383, 'learning_rate': 4.1532796633091296e-05, 'epoch': 2.7}
+{'loss': 3.3017, 'grad_norm': 16.21983528137207, 'learning_rate': 4.093559974371725e-05, 'epoch': 2.8}
+{'loss': 0.7121, 'grad_norm': 16.398881912231445, 'learning_rate': 4.0322676341324415e-05, 'epoch': 2.9}
+{'loss': 1.2505, 'grad_norm': 23.830476760864258, 'learning_rate': 3.969463130731183e-05, 'epoch': 3.0}
+{'loss': 2.7787, 'grad_norm': 30.194913864135742, 'learning_rate': 3.905208444630327e-05, 'epoch': 3.1}
+{'loss': 1.9872, 'grad_norm': 29.82036781311035, 'learning_rate': 3.8395669874474915e-05, 'epoch': 3.2}
+{'loss': 2.3503, 'grad_norm': 17.62224578857422, 'learning_rate': 3.7726035393759285e-05, 'epoch': 3.3}
+{'loss': 0.7105, 'grad_norm': 8.674273490905762, 'learning_rate': 3.704384185254288e-05, 'epoch': 3.4}
+{'loss': 2.4163, 'grad_norm': 31.840700149536133, 'learning_rate': 3.634976249348867e-05, 'epoch': 3.5}
+{'loss': 2.8184, 'grad_norm': 26.202251434326172, 'learning_rate': 3.564448228912682e-05, 'epoch': 3.6}
+ 50%|█████     | 50/100 [00:04<00:04, 10.17it/s/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+ 51%|█████     | 51/100 [00:05<00:06,  7.52it/s]
+{'loss': 0.8423, 'grad_norm': 9.340301513671875, 'learning_rate': 3.4203113817116957e-05, 'epoch': 3.8}
+{'loss': 1.9437, 'grad_norm': 18.059219360351562, 'learning_rate': 3.346844800613229e-05, 'epoch': 3.9}
+{'loss': 3.0558, 'grad_norm': 33.64118576049805, 'learning_rate': 3.272542485937369e-05, 'epoch': 4.0}
+{'loss': 2.7497, 'grad_norm': 43.34823226928711, 'learning_rate': 3.1974777650980735e-05, 'epoch': 4.1}
+{'loss': 2.5453, 'grad_norm': 21.20821762084961, 'learning_rate': 3.121724717912138e-05, 'epoch': 4.2}
+{'loss': 0.9871, 'grad_norm': 17.589025497436523, 'learning_rate': 3.045358103491357e-05, 'epoch': 4.3}
+{'loss': 2.1669, 'grad_norm': 34.559791564941406, 'learning_rate': 2.9684532864643122e-05, 'epoch': 4.4}
+{'loss': 1.902, 'grad_norm': 12.062314987182617, 'learning_rate': 2.8910861626005776e-05, 'epoch': 4.5}
+{'loss': 2.0831, 'grad_norm': 21.094507217407227, 'learning_rate': 2.8133330839107608e-05, 'epoch': 4.6}
+{'loss': 1.9539, 'grad_norm': 12.952410697937012, 'learning_rate': 2.7352707832962865e-05, 'epoch': 4.7}
+{'loss': 3.593, 'grad_norm': 14.885982513427734, 'learning_rate': 2.656976298823284e-05, 'epoch': 4.8}
+{'loss': 1.0685, 'grad_norm': 12.63501262664795, 'learning_rate': 2.578526897695321e-05, 'epoch': 4.9}
+{'loss': 0.758, 'grad_norm': 33.31330108642578, 'learning_rate': 2.5e-05, 'epoch': 5.0}
+{'eval_loss': 0.7871426939964294, 'eval_model_preparation_time': 0.0016, 'eval_runtime': 0.0215, 'eval_samples_per_second': 92.864, 'eval_steps_per_second': 46.432, 'epoch': 5.0}
+{'loss': 3.7715, 'grad_norm': 25.231807708740234, 'learning_rate': 2.4214731023046793e-05, 'epoch': 5.1}
+{'loss': 2.706, 'grad_norm': 20.27712631225586, 'learning_rate': 2.3430237011767167e-05, 'epoch': 5.2}
+{'loss': 0.706, 'grad_norm': 12.178509712219238, 'learning_rate': 2.2647292167037144e-05, 'epoch': 5.3}
+{'loss': 1.9761, 'grad_norm': 21.661869049072266, 'learning_rate': 2.186666916089239e-05, 'epoch': 5.4}
+
+ 73%|███████▎  | 73/100 [00:07<00:02, 10.48it/s]
+{'loss': 1.935, 'grad_norm': 31.23550033569336, 'learning_rate': 2.031546713535688e-05, 'epoch': 5.6}
+{'loss': 2.8226, 'grad_norm': 22.61177635192871, 'learning_rate': 1.9546418965086442e-05, 'epoch': 5.7}
+{'loss': 1.4458, 'grad_norm': 17.871318817138672, 'learning_rate': 1.8782752820878634e-05, 'epoch': 5.8}
+{'loss': 1.053, 'grad_norm': 37.47625732421875, 'learning_rate': 1.802522234901927e-05, 'epoch': 5.9}
+{'loss': 1.237, 'grad_norm': 18.218971252441406, 'learning_rate': 1.7274575140626318e-05, 'epoch': 6.0}
+{'loss': 2.7418, 'grad_norm': 16.648099899291992, 'learning_rate': 1.6531551993867717e-05, 'epoch': 6.1}
+{'loss': 2.264, 'grad_norm': 14.602682113647461, 'learning_rate': 1.5796886182883053e-05, 'epoch': 6.2}
+{'loss': 1.9589, 'grad_norm': 12.678489685058594, 'learning_rate': 1.5071302734130489e-05, 'epoch': 6.3}
+{'loss': 1.9859, 'grad_norm': 45.97754669189453, 'learning_rate': 1.4355517710873184e-05, 'epoch': 6.4}
+{'loss': 0.9277, 'grad_norm': 17.849302291870117, 'learning_rate': 1.3650237506511331e-05, 'epoch': 6.5}
+{'loss': 0.9232, 'grad_norm': 12.991534233093262, 'learning_rate': 1.2956158147457115e-05, 'epoch': 6.6}
+{'loss': 1.2972, 'grad_norm': 11.496980667114258, 'learning_rate': 1.2273964606240718e-05, 'epoch': 6.7}
+{'loss': 1.985, 'grad_norm': 36.308902740478516, 'learning_rate': 1.1604330125525079e-05, 'epoch': 6.8}
+{'loss': 2.7803, 'grad_norm': 13.563430786132812, 'learning_rate': 1.0947915553696742e-05, 'epoch': 6.9}
+{'loss': 3.9488, 'grad_norm': 33.533653259277344, 'learning_rate': 1.0305368692688174e-05, 'epoch': 7.0}
+{'loss': 2.7829, 'grad_norm': 19.624547958374023, 'learning_rate': 9.677323658675594e-06, 'epoch': 7.1}
+{'loss': 2.1609, 'grad_norm': 23.943130493164062, 'learning_rate': 9.064400256282757e-06, 'epoch': 7.2}
+{'loss': 2.0151, 'grad_norm': 14.012290000915527, 'learning_rate': 8.467203366908707e-06, 'epoch': 7.3}
+{'loss': 1.239, 'grad_norm': 13.757359504699707, 'learning_rate': 7.886322351782783e-06, 'epoch': 7.4}
+{'loss': 2.6915, 'grad_norm': 21.66231918334961, 'learning_rate': 7.3223304703363135e-06, 'epoch': 7.5}
+{'loss': 2.6474, 'grad_norm': 17.04482650756836, 'learning_rate': 6.775784314464717e-06, 'epoch': 7.6}
+{'loss': 1.9879, 'grad_norm': 15.181436538696289, 'learning_rate': 6.247223259238511e-06, 'epoch': 7.7}
+
+ 97%|█████████▋| 97/100 [00:09<00:00, 10.82it/s]
+{'loss': 1.7113, 'grad_norm': 21.62682342529297, 'learning_rate': 5.24612469060774e-06, 'epoch': 7.9}
+{'loss': 1.2539, 'grad_norm': 28.280426025390625, 'learning_rate': 4.7745751406263165e-06, 'epoch': 8.0}
+{'loss': 1.6771, 'grad_norm': 14.584867477416992, 'learning_rate': 4.322985643135952e-06, 'epoch': 8.1}
+{'loss': 0.6739, 'grad_norm': 13.963534355163574, 'learning_rate': 3.891801862449629e-06, 'epoch': 8.2}
+{'loss': 2.7244, 'grad_norm': 18.244342803955078, 'learning_rate': 3.4814493249014116e-06, 'epoch': 8.3}
+{'loss': 2.2333, 'grad_norm': 20.564834594726562, 'learning_rate': 3.092332998903416e-06, 'epoch': 8.4}
+{'loss': 0.9082, 'grad_norm': 9.989810943603516, 'learning_rate': 2.7248368952908053e-06, 'epoch': 8.5}
+{'loss': 2.9269, 'grad_norm': 18.752016067504883, 'learning_rate': 2.379323688349516e-06, 'epoch': 8.6}
+{'loss': 1.1455, 'grad_norm': 16.687381744384766, 'learning_rate': 2.0561343579004715e-06, 'epoch': 8.7}
+{'loss': 0.9015, 'grad_norm': 25.0909423828125, 'learning_rate': 1.7555878527937164e-06, 'epoch': 8.8}
+{'loss': 3.0783, 'grad_norm': 22.076126098632812, 'learning_rate': 1.4779807761443636e-06, 'epoch': 8.9}
+{'loss': 3.6381, 'grad_norm': 36.56584930419922, 'learning_rate': 1.2235870926211619e-06, 'epoch': 9.0}
+{'loss': 2.2495, 'grad_norm': 20.014829635620117, 'learning_rate': 9.926578580764234e-07, 'epoch': 9.1}
+{'loss': 1.9199, 'grad_norm': 21.226438522338867, 'learning_rate': 7.854209717842231e-07, 'epoch': 9.2}
+{'loss': 2.7048, 'grad_norm': 19.231399536132812, 'learning_rate': 6.020809515313142e-07, 'epoch': 9.3}
+{'loss': 1.8758, 'grad_norm': 13.0247220993042, 'learning_rate': 4.4281873178278475e-07, 'epoch': 9.4}
+{'loss': 1.301, 'grad_norm': 28.003890991210938, 'learning_rate': 3.077914851215585e-07, 'epoch': 9.5}
+{'loss': 2.976, 'grad_norm': 18.928415298461914, 'learning_rate': 1.9713246713805588e-07, 'epoch': 9.6}
+{'loss': 2.2508, 'grad_norm': 17.591344833374023, 'learning_rate': 1.109508849230001e-07, 'epoch': 9.7}
+{'loss': 0.558, 'grad_norm': 7.542356014251709, 'learning_rate': 4.9331789293211026e-08, 'epoch': 9.8}
+{'loss': 2.4861, 'grad_norm': 37.42118453979492, 'learning_rate': 1.233599085671e-08, 'epoch': 9.9}
+{'loss': 0.6795, 'grad_norm': 27.038522720336914, 'learning_rate': 0.0, 'epoch': 10.0}
+{'eval_loss': 0.8075100779533386, 'eval_model_preparation_time': 0.0016, 'eval_runtime': 0.0177, 'eval_samples_per_second': 113.031, 'eval_steps_per_second': 56.516, 'epoch': 10.0}
+100%|██████████| 100/100 [00:09<00:00, 10.50it/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+100%|██████████| 100/100 [00:09<00:00, 10.24it/s]
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+Client id: 9

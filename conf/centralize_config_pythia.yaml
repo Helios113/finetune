@@ -1,0 +1,61 @@
+---
+resume: False
+checkpoint_path: ""
+wandb_server_id: "server"
+group_id: "fl"
+wandb_client_id: "client" 
+run_id: "test22"
+dataset:
+  name: "medalpaca/medical_meadow_medical_flashcards"
+  files: "/nfs-share/dc912/llm_memorisation/datasets/medical_dataset/deduplicated_medical_meadow_flashcards_train.json"
+
+model:
+  name: "EleutherAI/pythia-70m"
+  tokenizer: "EleutherAI/pythia-70m"
+
+  quantization: 4 # 8 or 4 if you want to do quantization with BitsAndBytes
+  gradient_checkpointing: True # ! Ensure it matches that in train.train_arguments
+  lora:
+    peft_lora_r: 16
+    peft_lora_alpha: 64
+    target_modules: null
+    # target_modules: ["query_key_value"]
+
+
+training_arguments:
+  learning_rate: 5e-5
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4
+  gradient_accumulation_steps: 1
+  logging_steps: 1
+  logging_dir: "/nfs-share/dc912/llm_memorisation/finetune/outputs/centralized"
+  max_steps: 100
+  # num_train_epochs: 1
+  eval_steps: 50
+  eval_delay: 0
+  save_steps: 50
+  save_total_limit: 10
+  gradient_checkpointing: True # ! Ensure it matches that in model
+  gradient_checkpointing_kwargs:
+    use_reentrant: False
+  lr_scheduler_type: "cosine"
+  eval_strategy: "steps"
+  report_to: "none"
+  load_best_model_at_end: True
+
+
+train:
+  save_every_round: 20
+  seq_length: 512
+  evaluate_split: True
+  learning_rate_max: 5e-5
+  learning_rate_min: 1e-6
+  
+
+flower:
+  num_clients: 1
+  fraction_fit: 1
+  num_rounds: 1000
+  client_resources:
+    num_cpus: 8
+    num_gpus: 1.0

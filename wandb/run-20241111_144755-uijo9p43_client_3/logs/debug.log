@@ -1,0 +1,62 @@
+2024-11-11 14:47:55,815 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Current SDK version is 0.17.9
+2024-11-11 14:47:55,816 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Configure stats pid to 263676
+2024-11-11 14:47:55,816 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Loading settings from /nfs-share/pa511/.config/wandb/settings
+2024-11-11 14:47:55,816 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Loading settings from /nfs-share/pa511/llm_memorisation/finetune/wandb/settings
+2024-11-11 14:47:55,817 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Loading settings from environment variables: {'project': 'llm-memorization'}
+2024-11-11 14:47:55,817 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Applying setup settings: {'_disable_service': False}
+2024-11-11 14:47:55,817 WARNING MainThread:263676 [wandb_setup.py:_flush():77] Could not save program above cwd: /nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/ray/_private/workers/default_worker.py
+2024-11-11 14:47:55,818 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Inferring run settings from compute environment: {'program_relpath': None, 'program_abspath': '/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/ray/_private/workers/default_worker.py', 'program': '/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/ray/_private/workers/default_worker.py'}
+2024-11-11 14:47:55,818 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Applying login settings: {}
+2024-11-11 14:47:55,818 INFO    MainThread:263676 [wandb_init.py:_log_setup():524] Logging user logs to /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144755-uijo9p43_client_3/logs/debug.log
+2024-11-11 14:47:55,819 INFO    MainThread:263676 [wandb_init.py:_log_setup():525] Logging internal logs to /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144755-uijo9p43_client_3/logs/debug-internal.log
+2024-11-11 14:47:55,819 INFO    MainThread:263676 [wandb_init.py:init():608] calling init triggers
+2024-11-11 14:47:55,819 INFO    MainThread:263676 [wandb_init.py:init():615] wandb.init called with sweep_config: {}
+config: {}
+2024-11-11 14:47:55,820 INFO    MainThread:263676 [wandb_init.py:init():633] re-initializing run, found existing run on stack: uijo9p43_client_8
+2024-11-11 14:47:55,820 INFO    MainThread:263676 [wandb_run.py:_finish():2162] finishing run camlsys/test-fl-memorization/uijo9p43_client_8
+2024-11-11 14:47:55,820 INFO    MainThread:263676 [wandb_run.py:_atexit_cleanup():2426] got exitcode: 0
+2024-11-11 14:47:55,820 INFO    MainThread:263676 [wandb_run.py:_restore():2408] restore
+2024-11-11 14:47:55,821 INFO    MainThread:263676 [wandb_run.py:_restore():2414] restore done
+2024-11-11 14:47:55,822 INFO    MainThread:263676 [wandb_run.py:_on_finish():2679] communicating current version
+2024-11-11 14:47:55,895 INFO    MainThread:263676 [wandb_run.py:_on_finish():2688] got version response upgrade_message: "wandb version 0.18.6 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-11-11 14:48:01,391 INFO    MainThread:263676 [wandb_run.py:_footer_history_summary_info():4088] rendering history
+2024-11-11 14:48:01,395 INFO    MainThread:263676 [wandb_run.py:_footer_history_summary_info():4120] rendering summary
+2024-11-11 14:48:01,422 INFO    MainThread:263676 [wandb_run.py:_footer_sync_info():4047] logging synced files
+2024-11-11 14:48:01,450 INFO    MainThread:263676 [wandb_init.py:init():658] starting backend
+2024-11-11 14:48:01,450 INFO    MainThread:263676 [wandb_init.py:init():662] setting up manager
+2024-11-11 14:48:01,468 INFO    MainThread:263676 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-11-11 14:48:01,469 INFO    MainThread:263676 [wandb_init.py:init():670] backend started and connected
+2024-11-11 14:48:01,496 INFO    MainThread:263676 [wandb_init.py:init():768] updated telemetry
+2024-11-11 14:48:01,571 INFO    MainThread:263676 [wandb_init.py:init():801] communicating run to backend with 90.0 second timeout
+2024-11-11 14:48:02,939 INFO    MainThread:263676 [wandb_init.py:init():852] starting run threads in backend
+2024-11-11 14:48:03,450 INFO    MainThread:263676 [wandb_run.py:_console_start():2465] atexit reg
+2024-11-11 14:48:03,451 INFO    MainThread:263676 [wandb_run.py:_redirect():2311] redirect: wrap_raw
+2024-11-11 14:48:03,451 INFO    MainThread:263676 [wandb_run.py:_redirect():2376] Wrapping output streams.
+2024-11-11 14:48:03,452 INFO    MainThread:263676 [wandb_run.py:_redirect():2401] Redirects installed.
+2024-11-11 14:48:03,453 INFO    MainThread:263676 [wandb_init.py:init():895] run started, returning control to user process
+2024-11-11 14:48:15,600 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Current SDK version is 0.17.9
+2024-11-11 14:48:15,601 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Configure stats pid to 263676
+2024-11-11 14:48:15,601 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Loading settings from /nfs-share/pa511/.config/wandb/settings
+2024-11-11 14:48:15,601 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Loading settings from /nfs-share/pa511/llm_memorisation/finetune/wandb/settings
+2024-11-11 14:48:15,602 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Loading settings from environment variables: {'project': 'llm-memorization'}
+2024-11-11 14:48:15,602 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Applying setup settings: {'_disable_service': False}
+2024-11-11 14:48:15,602 WARNING MainThread:263676 [wandb_setup.py:_flush():77] Could not save program above cwd: /nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/ray/_private/workers/default_worker.py
+2024-11-11 14:48:15,602 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Inferring run settings from compute environment: {'program_relpath': None, 'program_abspath': '/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/ray/_private/workers/default_worker.py', 'program': '/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/ray/_private/workers/default_worker.py'}
+2024-11-11 14:48:15,602 INFO    MainThread:263676 [wandb_setup.py:_flush():77] Applying login settings: {}
+2024-11-11 14:48:15,602 INFO    MainThread:263676 [wandb_init.py:_log_setup():524] Logging user logs to /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144815-uijo9p43_client_7/logs/debug.log
+2024-11-11 14:48:15,603 INFO    MainThread:263676 [wandb_init.py:_log_setup():525] Logging internal logs to /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144815-uijo9p43_client_7/logs/debug-internal.log
+2024-11-11 14:48:15,603 INFO    MainThread:263676 [wandb_init.py:init():608] calling init triggers
+2024-11-11 14:48:15,603 INFO    MainThread:263676 [wandb_init.py:init():615] wandb.init called with sweep_config: {}
+config: {}
+2024-11-11 14:48:15,603 INFO    MainThread:263676 [wandb_init.py:init():633] re-initializing run, found existing run on stack: uijo9p43_client_3
+2024-11-11 14:48:15,604 INFO    MainThread:263676 [wandb_run.py:_finish():2162] finishing run camlsys/test-fl-memorization/uijo9p43_client_3
+2024-11-11 14:48:15,604 INFO    MainThread:263676 [wandb_run.py:_atexit_cleanup():2426] got exitcode: 0
+2024-11-11 14:48:15,605 INFO    MainThread:263676 [wandb_run.py:_restore():2408] restore
+2024-11-11 14:48:15,605 INFO    MainThread:263676 [wandb_run.py:_restore():2414] restore done
+2024-11-11 14:48:15,605 INFO    MainThread:263676 [wandb_run.py:_on_finish():2679] communicating current version
+2024-11-11 14:48:15,673 INFO    MainThread:263676 [wandb_run.py:_on_finish():2688] got version response upgrade_message: "wandb version 0.18.6 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-11-11 14:48:20,838 INFO    MainThread:263676 [wandb_run.py:_footer_history_summary_info():4088] rendering history
+2024-11-11 14:48:20,841 INFO    MainThread:263676 [wandb_run.py:_footer_history_summary_info():4120] rendering summary
+2024-11-11 14:48:20,873 INFO    MainThread:263676 [wandb_run.py:_footer_sync_info():4047] logging synced files

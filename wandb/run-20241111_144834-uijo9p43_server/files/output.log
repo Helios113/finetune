@@ -1,0 +1,557 @@
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+2024-11-11 14:48:44,604	ERROR client.py:239 -- In eval function
+2024-11-11 14:48:44,605	ERROR client.py:240 -- Config: {}
+2024-11-11 14:48:44,607	ERROR client.py:241 -- CFG: {'resume': False, 'checkpoint_path': '', 'wandb_server_id': 'server', 'group_id': 'fl', 'wandb_client_id': 'client', 'run_id': 'uijo9p43', 'dataset': {'name': 'medalpaca/medical_meadow_medical_flashcards'}, 'model': {'name': 'EleutherAI/pythia-70m', 'tokenizer': 'EleutherAI/pythia-70m', 'quantization': 4, 'gradient_checkpointing': True, 'lora': {'peft_lora_r': 16, 'peft_lora_alpha': 64, 'target_modules': None}}, 'training_arguments': {'learning_rate': 5e-05, 'per_device_train_batch_size': 4, 'per_device_eval_batch_size': 4, 'gradient_accumulation_steps': 1, 'logging_steps': 1, 'max_steps': 100, 'eval_steps': 50, 'eval_delay': 0, 'save_steps': 50, 'save_total_limit': 10, 'gradient_checkpointing': True, 'gradient_checkpointing_kwargs': {'use_reentrant': False}, 'lr_scheduler_type': 'cosine', 'eval_strategy': 'steps', 'report_to': 'none', 'load_best_model_at_end': True}, 'train': {'save_every_round': 20, 'seq_length': 512, 'evaluate_split': True, 'learning_rate_max': 5e-05, 'learning_rate_min': 1e-06}, 'flower': {'num_clients': 10, 'fraction_fit': 0.2, 'num_rounds': 50, 'client_resources': {'num_cpus': 8, 'num_gpus': 1.0}}}
+2024-11-11 14:48:45,503	ERROR client.py:246 -- params set
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/datasets/utils/_dill.py:379: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
+  obj.co_lnotab,  # for < python 3.10 [not counted in args]
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/trl/trainer/sft_trainer.py:323: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `CustomSFTTrainer.__init__`. Use `processing_class` instead.
+  super().__init__(
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+max_steps is given, it will override any value given in num_train_epochs
+100%|██████████| 5/5 [00:00<00:00, 70.02it/s]
+[92mINFO [39m:      fit progress: (19, 0.0, {}, 938.9166224570945)
+[92mINFO [39m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [39m:
+[92mINFO [39m:      [ROUND 20]
+[92mINFO [39m:      configure_fit: strategy sampled 2 clients (out of 10)
+[36m(ClientAppActor pid=263676)[39m Client id: 3
+[36m(ClientAppActor pid=263676)[39m /nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+[36m(ClientAppActor pid=263676)[39m   self.FromDatetime(datetime.datetime.utcnow())
+[36m(ClientAppActor pid=263676)[39m wandb: - 0.000 MB of 0.000 MB uploaded
+[36m(ClientAppActor pid=263676)[39m wandb: \ 0.000 MB of 0.017 MB uploaded
+wandb:
+[36m(ClientAppActor pid=263676)[39m wandb:
+[36m(ClientAppActor pid=263676)[39m wandb: Run history:
+[36m(ClientAppActor pid=263676)[39m wandb:                        eval/epoch ▁█
+[36m(ClientAppActor pid=263676)[39m wandb:                    eval/eval_loss ▁▅█
+[36m(ClientAppActor pid=263676)[39m wandb:  eval/eval_model_preparation_time ▁▁▁
+[36m(ClientAppActor pid=263676)[39m wandb:                 eval/eval_runtime █▁▁
+[36m(ClientAppActor pid=263676)[39m wandb:      eval/eval_samples_per_second ▁██
+[36m(ClientAppActor pid=263676)[39m wandb:        eval/eval_steps_per_second ▁██
+[36m(ClientAppActor pid=263676)[39m wandb:                              iter ▁▁▁▂▂▃▄▅▅▅▅▆▇▇████
+[36m(ClientAppActor pid=263676)[39m wandb:                       train/epoch ▁▂▂▃▄▄▄▅▆▇▇███
+[36m(ClientAppActor pid=263676)[39m wandb:                   train/eval_loss ▁▅█
+[36m(ClientAppActor pid=263676)[39m wandb: train/eval_model_preparation_time ▁▁▁
+[36m(ClientAppActor pid=263676)[39m wandb:                train/eval_runtime █▁▁
+[36m(ClientAppActor pid=263676)[39m wandb:     train/eval_samples_per_second ▁██
+[36m(ClientAppActor pid=263676)[39m wandb:       train/eval_steps_per_second ▁██
+[36m(ClientAppActor pid=263676)[39m wandb:                   train/grad_norm ▁▂▃▁▃▂▃▂▂█▁
+[36m(ClientAppActor pid=263676)[39m wandb:               train/learning_rate ██▇▇▆▅▃▂▂▁▁
+[36m(ClientAppActor pid=263676)[39m wandb:                        train/loss ▃▂▄▂▁█▇██▂▃
+[36m(ClientAppActor pid=263676)[39m wandb:                  train/total_flos ▁
+[36m(ClientAppActor pid=263676)[39m wandb:                  train/train_loss ▁
+[36m(ClientAppActor pid=263676)[39m wandb:               train/train_runtime ▁
+[36m(ClientAppActor pid=263676)[39m wandb:    train/train_samples_per_second ▁
+[36m(ClientAppActor pid=263676)[39m wandb:      train/train_steps_per_second ▁
+[36m(ClientAppActor pid=263676)[39m wandb:
+[36m(ClientAppActor pid=263676)[39m wandb: Run summary:
+[36m(ClientAppActor pid=263676)[39m wandb:                        eval/epoch 10.0
+[36m(ClientAppActor pid=263676)[39m wandb:                    eval/eval_loss 0.65758
+[36m(ClientAppActor pid=263676)[39m wandb:  eval/eval_model_preparation_time 0.0016
+[36m(ClientAppActor pid=263676)[39m wandb:                 eval/eval_runtime 0.023
+[36m(ClientAppActor pid=263676)[39m wandb:      eval/eval_samples_per_second 87.122
+[36m(ClientAppActor pid=263676)[39m wandb:        eval/eval_steps_per_second 43.561
+[36m(ClientAppActor pid=263676)[39m wandb:                              iter 1900
+[36m(ClientAppActor pid=263676)[39m wandb:                       train/epoch 10.0
+[36m(ClientAppActor pid=263676)[39m wandb:                   train/eval_loss 0.65758
+[36m(ClientAppActor pid=263676)[39m wandb: train/eval_model_preparation_time 0.0016
+[36m(ClientAppActor pid=263676)[39m wandb:                train/eval_runtime 0.023
+[36m(ClientAppActor pid=263676)[39m wandb:     train/eval_samples_per_second 87.122
+[36m(ClientAppActor pid=263676)[39m wandb:       train/eval_steps_per_second 43.561
+[36m(ClientAppActor pid=263676)[39m wandb:                   train/grad_norm 23.6895
+[36m(ClientAppActor pid=263676)[39m wandb:               train/learning_rate 0.0
+[36m(ClientAppActor pid=263676)[39m wandb:                        train/loss 0.9919
+[36m(ClientAppActor pid=263676)[39m wandb:                  train/total_flos 8263532150784.0
+[36m(ClientAppActor pid=263676)[39m wandb:                  train/train_loss 1.30993
+[36m(ClientAppActor pid=263676)[39m wandb:               train/train_runtime 10.0402
+[36m(ClientAppActor pid=263676)[39m wandb:    train/train_samples_per_second 39.84
+[36m(ClientAppActor pid=263676)[39m wandb:      train/train_steps_per_second 9.96
+[36m(ClientAppActor pid=263676)[39m wandb:
+[36m(ClientAppActor pid=263676)[39m wandb: 🚀 View run uijo9p43_client_7 at: https://wandb.ai/camlsys/test-fl-memorization/runs/uijo9p43_client_7
+[36m(ClientAppActor pid=263676)[39m wandb: ⭐️ View project at: https://wandb.ai/camlsys/test-fl-memorization
+[36m(ClientAppActor pid=263676)[39m wandb: Synced 4 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+[36m(ClientAppActor pid=263676)[39m wandb: Find logs at: ./wandb/run-20241111_144815-uijo9p43_client_7/logs
+[36m(ClientAppActor pid=263676)[39m wandb: WARNING wandb version 0.18.6 is available!  To upgrade, please run:
+[36m(ClientAppActor pid=263676)[39m wandb: WARNING  $ pip install wandb --upgrade
+[36m(ClientAppActor pid=263676)[39m wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+[36m(ClientAppActor pid=263676)[39m wandb: - Waiting for wandb.init()...
+wandb: Tracking run with wandb version 0.17.9for wandb.init()...
+[36m(ClientAppActor pid=263676)[39m wandb: Run data is saved locally in /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144847-uijo9p43_client_3
+[36m(ClientAppActor pid=263676)[39m wandb: Run `wandb offline` to turn off syncing.
+[36m(ClientAppActor pid=263676)[39m wandb: Resuming run uijo9p43_client_3
+[36m(ClientAppActor pid=263676)[39m wandb: ⭐️ View project at https://wandb.ai/camlsys/test-fl-memorization
+[36m(ClientAppActor pid=263676)[39m wandb: 🚀 View run at https://wandb.ai/camlsys/test-fl-memorization/runs/uijo9p43_client_3
+[36m(ClientAppActor pid=263676)[39m /nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/datasets/utils/_dill.py:379: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
+[36m(ClientAppActor pid=263676)[39m   obj.co_lnotab,  # for < python 3.10 [not counted in args]
+[36m(ClientAppActor pid=263676)[39m /nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+[36m(ClientAppActor pid=263676)[39m   self.FromDatetime(datetime.datetime.utcnow())
+[36m(ClientAppActor pid=263676)[39m /nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/trl/trainer/sft_trainer.py:323: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `CustomSFTTrainer.__init__`. Use `processing_class` instead.
+[36m(ClientAppActor pid=263676)[39m   super().__init__(
+[36m(ClientAppActor pid=263676)[39m Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+[36m(ClientAppActor pid=263676)[39m max_steps is given, it will override any value given in num_train_epochs
+100%|██████████| 1/1 [00:00<00:00, 914.59it/s]
+  0%|          | 0/100 [00:00<?, ?it/s]
+  1%|          | 1/100 [00:00<00:09, 10.04it/s]
+  2%|▏         | 2/100 [00:00<00:09, 10.11it/s]
+  3%|▎         | 3/100 [00:00<00:09, 10.11it/s]
+  4%|▍         | 4/100 [00:00<00:09,  9.85it/s]
+  6%|▌         | 6/100 [00:00<00:09,  9.73it/s]
+  7%|▋         | 7/100 [00:00<00:09, 10.24it/s]
+  8%|▊         | 8/100 [00:00<00:08, 10.24it/s]
+ 10%|█         | 10/100 [00:00<00:08, 10.52it/s]
+ 11%|█         | 11/100 [00:01<00:08, 10.39it/s]
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.2412, 'grad_norm': 17.620820999145508, 'learning_rate': 4.998766400914329e-05, 'epoch': 0.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.2927, 'grad_norm': 27.34915542602539, 'learning_rate': 4.995066821070679e-05, 'epoch': 0.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8973, 'grad_norm': 31.58707046508789, 'learning_rate': 4.9889049115077005e-05, 'epoch': 0.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.0922, 'grad_norm': 21.7498836517334, 'learning_rate': 4.980286753286195e-05, 'epoch': 0.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8663, 'grad_norm': 28.842649459838867, 'learning_rate': 4.9692208514878444e-05, 'epoch': 0.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.497, 'grad_norm': 19.40139389038086, 'learning_rate': 4.9557181268217227e-05, 'epoch': 0.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6844, 'grad_norm': 44.70552062988281, 'learning_rate': 4.939791904846869e-05, 'epoch': 0.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7212, 'grad_norm': 26.073942184448242, 'learning_rate': 4.9214579028215776e-05, 'epoch': 0.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6487, 'grad_norm': 25.754512786865234, 'learning_rate': 4.900734214192358e-05, 'epoch': 0.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.721, 'grad_norm': 33.5213737487793, 'learning_rate': 4.877641290737884e-05, 'epoch': 1.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4227, 'grad_norm': 18.065841674804688, 'learning_rate': 4.852201922385564e-05, 'epoch': 1.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6202, 'grad_norm': 23.28850555419922, 'learning_rate': 4.8244412147206284e-05, 'epoch': 1.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6075, 'grad_norm': 15.429043769836426, 'learning_rate': 4.794386564209953e-05, 'epoch': 1.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.5765, 'grad_norm': 21.59930419921875, 'learning_rate': 4.762067631165049e-05, 'epoch': 1.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.8925, 'grad_norm': 26.230226516723633, 'learning_rate': 4.72751631047092e-05, 'epoch': 1.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.0649, 'grad_norm': 34.34830093383789, 'learning_rate': 4.690766700109659e-05, 'epoch': 1.6}
+ 12%|█▏        | 12/100 [00:01<00:08, 10.39it/s]
+ 13%|█▎        | 13/100 [00:01<00:08, 10.39it/s]
+ 14%|█▍        | 14/100 [00:01<00:08, 10.39it/s]
+ 16%|█▌        | 16/100 [00:01<00:08, 10.21it/s]
+ 17%|█▋        | 17/100 [00:01<00:08, 10.19it/s]
+ 18%|█▊        | 18/100 [00:01<00:08, 10.19it/s]
+ 19%|█▉        | 19/100 [00:01<00:08, 10.07it/s]
+ 20%|██        | 20/100 [00:01<00:07, 10.07it/s]
+ 21%|██        | 21/100 [00:02<00:07, 10.13it/s]
+ 22%|██▏       | 22/100 [00:02<00:07, 10.13it/s]
+ 23%|██▎       | 23/100 [00:02<00:07, 10.24it/s]
+ 24%|██▍       | 24/100 [00:02<00:07, 10.24it/s]
+ 25%|██▌       | 25/100 [00:02<00:07, 10.27it/s]
+ 26%|██▌       | 26/100 [00:02<00:07, 10.27it/s]
+ 27%|██▋       | 27/100 [00:02<00:07, 10.03it/s]
+ 28%|██▊       | 28/100 [00:02<00:07, 10.03it/s]
+ 30%|███       | 30/100 [00:02<00:07,  9.96it/s]
+ 31%|███       | 31/100 [00:03<00:06, 10.13it/s]
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6448, 'grad_norm': 24.853317260742188, 'learning_rate': 4.65185506750986e-05, 'epoch': 1.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.3522, 'grad_norm': 24.212905883789062, 'learning_rate': 4.610819813755038e-05, 'epoch': 1.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7342, 'grad_norm': 28.490888595581055, 'learning_rate': 4.567701435686404e-05, 'epoch': 1.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.2472, 'grad_norm': 31.253015518188477, 'learning_rate': 4.522542485937369e-05, 'epoch': 2.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8957, 'grad_norm': 19.016998291015625, 'learning_rate': 4.4753875309392266e-05, 'epoch': 2.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6739, 'grad_norm': 20.711896896362305, 'learning_rate': 4.426283106939474e-05, 'epoch': 2.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.7348, 'grad_norm': 19.285263061523438, 'learning_rate': 4.375277674076149e-05, 'epoch': 2.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3652, 'grad_norm': 12.193012237548828, 'learning_rate': 4.3224215685535294e-05, 'epoch': 2.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.651, 'grad_norm': 97.235595703125, 'learning_rate': 4.267766952966369e-05, 'epoch': 2.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.5111, 'grad_norm': 23.951692581176758, 'learning_rate': 4.211367764821722e-05, 'epoch': 2.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6128, 'grad_norm': 17.47769546508789, 'learning_rate': 4.1532796633091296e-05, 'epoch': 2.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.9398, 'grad_norm': 30.351497650146484, 'learning_rate': 4.093559974371725e-05, 'epoch': 2.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8004, 'grad_norm': 38.53565979003906, 'learning_rate': 4.0322676341324415e-05, 'epoch': 2.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.7176, 'grad_norm': 42.64616394042969, 'learning_rate': 3.969463130731183e-05, 'epoch': 3.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.2929, 'grad_norm': 50.13919448852539, 'learning_rate': 3.905208444630327e-05, 'epoch': 3.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.5187, 'grad_norm': 23.081377029418945, 'learning_rate': 3.8395669874474915e-05, 'epoch': 3.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.522, 'grad_norm': 13.22949504852295, 'learning_rate': 3.7726035393759285e-05, 'epoch': 3.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4101, 'grad_norm': 20.128286361694336, 'learning_rate': 3.704384185254288e-05, 'epoch': 3.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.7067, 'grad_norm': 33.41716003417969, 'learning_rate': 3.634976249348867e-05, 'epoch': 3.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4023, 'grad_norm': 15.624459266662598, 'learning_rate': 3.564448228912682e-05, 'epoch': 3.6}
+ 32%|███▏      | 32/100 [00:03<00:06, 10.13it/s]
+ 33%|███▎      | 33/100 [00:03<00:06, 10.03it/s]
+ 34%|███▍      | 34/100 [00:03<00:06, 10.03it/s]
+ 35%|███▌      | 35/100 [00:03<00:06, 10.01it/s]
+ 35%|███▌      | 35/100 [00:03<00:06, 10.01it/s]
+ 36%|███▌      | 36/100 [00:03<00:06, 10.01it/s]
+ 37%|███▋      | 37/100 [00:03<00:06, 10.05it/s]
+ 39%|███▉      | 39/100 [00:03<00:05, 10.82it/s]
+ 41%|████      | 41/100 [00:03<00:04, 12.04it/s]
+ 42%|████▏     | 42/100 [00:03<00:04, 12.04it/s]
+ 44%|████▍     | 44/100 [00:04<00:04, 13.14it/s]
+ 45%|████▌     | 45/100 [00:04<00:03, 14.11it/s]
+ 47%|████▋     | 47/100 [00:04<00:04, 13.01it/s]
+ 48%|████▊     | 48/100 [00:04<00:03, 13.01it/s]
+ 49%|████▉     | 49/100 [00:04<00:04, 11.82it/s]
+ 50%|█████     | 50/100 [00:04<00:04, 11.82it/s]
+ 51%|█████     | 51/100 [00:04<00:05,  8.44it/s]/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+[36m(ClientAppActor pid=263676)[39m   self.FromDatetime(datetime.datetime.utcnow())
+ 51%|█████     | 51/100 [00:04<00:05,  8.44it/s]
+ 52%|█████▏    | 52/100 [00:05<00:05,  8.44it/s]
+ 53%|█████▎    | 53/100 [00:05<00:05,  8.90it/s]
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7296, 'grad_norm': 18.896820068359375, 'learning_rate': 3.4928697265869515e-05, 'epoch': 3.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3296, 'grad_norm': 13.549508094787598, 'learning_rate': 3.4203113817116957e-05, 'epoch': 3.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.863, 'grad_norm': 23.72533416748047, 'learning_rate': 3.346844800613229e-05, 'epoch': 3.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.0612, 'grad_norm': 24.200611114501953, 'learning_rate': 3.272542485937369e-05, 'epoch': 4.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.5553, 'grad_norm': 30.292184829711914, 'learning_rate': 3.1974777650980735e-05, 'epoch': 4.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.3617, 'grad_norm': 20.922956466674805, 'learning_rate': 3.121724717912138e-05, 'epoch': 4.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.471, 'grad_norm': 22.907459259033203, 'learning_rate': 3.045358103491357e-05, 'epoch': 4.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.0247, 'grad_norm': 30.84341812133789, 'learning_rate': 2.9684532864643122e-05, 'epoch': 4.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3702, 'grad_norm': 59.81397247314453, 'learning_rate': 2.8910861626005776e-05, 'epoch': 4.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6095, 'grad_norm': 16.573768615722656, 'learning_rate': 2.8133330839107608e-05, 'epoch': 4.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.7336, 'grad_norm': 24.107221603393555, 'learning_rate': 2.7352707832962865e-05, 'epoch': 4.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3213, 'grad_norm': 26.771053314208984, 'learning_rate': 2.656976298823284e-05, 'epoch': 4.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4572, 'grad_norm': 26.480945587158203, 'learning_rate': 2.578526897695321e-05, 'epoch': 4.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.5209, 'grad_norm': 44.80231475830078, 'learning_rate': 2.5e-05, 'epoch': 5.0}
+[36m(ClientAppActor pid=263676)[39m {'eval_loss': 2.0097239017486572, 'eval_model_preparation_time': 0.0009, 'eval_runtime': 0.0244, 'eval_samples_per_second': 82.099, 'eval_steps_per_second': 41.049, 'epoch': 5.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.0391, 'grad_norm': 48.26239776611328, 'learning_rate': 2.4214731023046793e-05, 'epoch': 5.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3591, 'grad_norm': 18.226469039916992, 'learning_rate': 2.3430237011767167e-05, 'epoch': 5.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4356, 'grad_norm': 28.159160614013672, 'learning_rate': 2.2647292167037144e-05, 'epoch': 5.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6205, 'grad_norm': 25.019254684448242, 'learning_rate': 2.186666916089239e-05, 'epoch': 5.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6808, 'grad_norm': 23.453184127807617, 'learning_rate': 2.1089138373994223e-05, 'epoch': 5.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7799, 'grad_norm': 51.47234344482422, 'learning_rate': 2.031546713535688e-05, 'epoch': 5.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4108, 'grad_norm': 61.32126235961914, 'learning_rate': 1.9546418965086442e-05, 'epoch': 5.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.5395, 'grad_norm': 20.656570434570312, 'learning_rate': 1.8782752820878634e-05, 'epoch': 5.8}
+ 55%|█████▌    | 55/100 [00:05<00:04,  9.19it/s]
+ 56%|█████▌    | 56/100 [00:05<00:04,  9.19it/s]
+ 57%|█████▋    | 57/100 [00:05<00:04,  9.24it/s]
+ 58%|█████▊    | 58/100 [00:05<00:04,  9.24it/s]
+ 59%|█████▉    | 59/100 [00:05<00:04,  9.37it/s]
+ 61%|██████    | 61/100 [00:05<00:04,  9.53it/s]
+ 62%|██████▏   | 62/100 [00:06<00:04,  9.49it/s]
+ 63%|██████▎   | 63/100 [00:06<00:03,  9.49it/s]
+ 64%|██████▍   | 64/100 [00:06<00:03,  9.94it/s]
+ 66%|██████▌   | 66/100 [00:06<00:03, 10.08it/s]
+ 67%|██████▋   | 67/100 [00:06<00:03, 10.08it/s]
+ 68%|██████▊   | 68/100 [00:06<00:03, 10.18it/s]
+ 70%|███████   | 70/100 [00:06<00:02, 10.49it/s]
+ 71%|███████   | 71/100 [00:06<00:02, 10.49it/s]
+ 72%|███████▏  | 72/100 [00:07<00:02, 10.05it/s]
+ 73%|███████▎  | 73/100 [00:07<00:02, 10.05it/s]
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4881, 'grad_norm': 18.07503890991211, 'learning_rate': 1.802522234901927e-05, 'epoch': 5.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3065, 'grad_norm': 34.814823150634766, 'learning_rate': 1.7274575140626318e-05, 'epoch': 6.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3069, 'grad_norm': 69.21099853515625, 'learning_rate': 1.6531551993867717e-05, 'epoch': 6.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.343, 'grad_norm': 51.23696517944336, 'learning_rate': 1.5796886182883053e-05, 'epoch': 6.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3357, 'grad_norm': 17.703821182250977, 'learning_rate': 1.5071302734130489e-05, 'epoch': 6.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.0566, 'grad_norm': 98.87346649169922, 'learning_rate': 1.4355517710873184e-05, 'epoch': 6.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3721, 'grad_norm': 15.608634948730469, 'learning_rate': 1.3650237506511331e-05, 'epoch': 6.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4163, 'grad_norm': 28.136869430541992, 'learning_rate': 1.2956158147457115e-05, 'epoch': 6.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.7087, 'grad_norm': 36.45564651489258, 'learning_rate': 1.2273964606240718e-05, 'epoch': 6.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8074, 'grad_norm': 38.617393493652344, 'learning_rate': 1.1604330125525079e-05, 'epoch': 6.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.3847, 'grad_norm': 30.188879013061523, 'learning_rate': 1.0947915553696742e-05, 'epoch': 6.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.2562, 'grad_norm': 35.89202880859375, 'learning_rate': 1.0305368692688174e-05, 'epoch': 7.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.0451, 'grad_norm': 35.097415924072266, 'learning_rate': 9.677323658675594e-06, 'epoch': 7.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7072, 'grad_norm': 65.9817886352539, 'learning_rate': 9.064400256282757e-06, 'epoch': 7.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.5743, 'grad_norm': 33.80733871459961, 'learning_rate': 8.467203366908707e-06, 'epoch': 7.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.7611, 'grad_norm': 25.87191390991211, 'learning_rate': 7.886322351782783e-06, 'epoch': 7.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.2756, 'grad_norm': 22.76181983947754, 'learning_rate': 7.3223304703363135e-06, 'epoch': 7.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.2753, 'grad_norm': 23.21232795715332, 'learning_rate': 6.775784314464717e-06, 'epoch': 7.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.943, 'grad_norm': 27.6466121673584, 'learning_rate': 6.247223259238511e-06, 'epoch': 7.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.2635, 'grad_norm': 15.009150505065918, 'learning_rate': 5.737168930605272e-06, 'epoch': 7.8}
+ 74%|███████▍  | 74/100 [00:07<00:02, 10.00it/s]
+ 75%|███████▌  | 75/100 [00:07<00:02, 10.00it/s]
+ 76%|███████▌  | 76/100 [00:07<00:02, 10.00it/s]
+ 77%|███████▋  | 77/100 [00:07<00:02, 10.00it/s]
+ 78%|███████▊  | 78/100 [00:07<00:02, 10.20it/s]
+ 80%|████████  | 80/100 [00:07<00:01, 10.14it/s]
+ 81%|████████  | 81/100 [00:07<00:01, 10.14it/s]
+ 82%|████████▏ | 82/100 [00:08<00:01, 10.10it/s]
+ 83%|████████▎ | 83/100 [00:08<00:01, 10.10it/s]
+ 84%|████████▍ | 84/100 [00:08<00:01, 10.03it/s]
+ 86%|████████▌ | 86/100 [00:08<00:01, 10.00it/s]
+ 87%|████████▋ | 87/100 [00:08<00:01, 10.00it/s]
+ 88%|████████▊ | 88/100 [00:08<00:01,  9.98it/s]
+ 89%|████████▉ | 89/100 [00:08<00:01,  9.98it/s]
+ 91%|█████████ | 91/100 [00:08<00:00, 10.22it/s]
+ 92%|█████████▏| 92/100 [00:09<00:00, 10.37it/s]
+ 93%|█████████▎| 93/100 [00:09<00:00, 10.37it/s]
+ 94%|█████████▍| 94/100 [00:09<00:00, 10.10it/s]
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4538, 'grad_norm': 63.07300567626953, 'learning_rate': 5.24612469060774e-06, 'epoch': 7.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.0851, 'grad_norm': 38.877235412597656, 'learning_rate': 4.7745751406263165e-06, 'epoch': 8.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8552, 'grad_norm': 16.95347785949707, 'learning_rate': 4.322985643135952e-06, 'epoch': 8.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6594, 'grad_norm': 26.28114128112793, 'learning_rate': 3.891801862449629e-06, 'epoch': 8.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6436, 'grad_norm': 37.00065231323242, 'learning_rate': 3.4814493249014116e-06, 'epoch': 8.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.4621, 'grad_norm': 37.738582611083984, 'learning_rate': 3.092332998903416e-06, 'epoch': 8.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4699, 'grad_norm': 19.306133270263672, 'learning_rate': 2.7248368952908053e-06, 'epoch': 8.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.7909, 'grad_norm': 23.422321319580078, 'learning_rate': 2.379323688349516e-06, 'epoch': 8.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3362, 'grad_norm': 13.772645950317383, 'learning_rate': 2.0561343579004715e-06, 'epoch': 8.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.2109, 'grad_norm': 31.24578285217285, 'learning_rate': 1.7555878527937164e-06, 'epoch': 8.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6992, 'grad_norm': 36.82748794555664, 'learning_rate': 1.4779807761443636e-06, 'epoch': 8.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.2058, 'grad_norm': 22.58225440979004, 'learning_rate': 1.2235870926211619e-06, 'epoch': 9.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.2729, 'grad_norm': 47.76694107055664, 'learning_rate': 9.926578580764234e-07, 'epoch': 9.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.2336, 'grad_norm': 20.071853637695312, 'learning_rate': 7.854209717842231e-07, 'epoch': 9.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.2136, 'grad_norm': 10.970670700073242, 'learning_rate': 6.020809515313142e-07, 'epoch': 9.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4424, 'grad_norm': 32.003807067871094, 'learning_rate': 4.4281873178278475e-07, 'epoch': 9.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8067, 'grad_norm': 39.77474594116211, 'learning_rate': 3.077914851215585e-07, 'epoch': 9.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4742, 'grad_norm': 21.702777862548828, 'learning_rate': 1.9713246713805588e-07, 'epoch': 9.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.9098, 'grad_norm': 22.06692123413086, 'learning_rate': 1.109508849230001e-07, 'epoch': 9.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3488, 'grad_norm': 43.15212631225586, 'learning_rate': 4.9331789293211026e-08, 'epoch': 9.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.0391, 'grad_norm': 23.970510482788086, 'learning_rate': 1.233599085671e-08, 'epoch': 9.9}
+ 95%|█████████▌| 95/100 [00:09<00:00, 10.10it/s]
+ 96%|█████████▌| 96/100 [00:09<00:00,  9.92it/s]
+ 97%|█████████▋| 97/100 [00:09<00:00,  9.59it/s]
+ 98%|█████████▊| 98/100 [00:09<00:00,  9.61it/s]
+ 99%|█████████▉| 99/100 [00:09<00:00,  9.67it/s]
+100%|██████████| 100/100 [00:09<00:00,  9.67it/s]
+[36m(ClientAppActor pid=263676)[39m /nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+[36m(ClientAppActor pid=263676)[39m   self.FromDatetime(datetime.datetime.utcnow())
+100%|██████████| 100/100 [00:10<00:00,  9.95it/s]
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.2682, 'grad_norm': 22.739656448364258, 'learning_rate': 0.0, 'epoch': 10.0}
+[36m(ClientAppActor pid=263676)[39m {'eval_loss': 2.1316299438476562, 'eval_model_preparation_time': 0.0009, 'eval_runtime': 0.0237, 'eval_samples_per_second': 84.341, 'eval_steps_per_second': 42.17, 'epoch': 10.0}
+[36m(ClientAppActor pid=263676)[39m {'train_runtime': 10.0492, 'train_samples_per_second': 39.804, 'train_steps_per_second': 9.951, 'train_loss': 0.8436283218860626, 'epoch': 10.0}
+[36m(ClientAppActor pid=263676)[39m Client id: 6
+[36m(ClientAppActor pid=263676)[39m /nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+[36m(ClientAppActor pid=263676)[39m   self.FromDatetime(datetime.datetime.utcnow())
+[36m(ClientAppActor pid=263676)[39m wandb: - 0.000 MB of 0.000 MB uploaded
+[36m(ClientAppActor pid=263676)[39m wandb: \ 0.000 MB of 0.018 MB uploaded
+wandb:
+[36m(ClientAppActor pid=263676)[39m wandb:
+[36m(ClientAppActor pid=263676)[39m wandb: Run history:
+[36m(ClientAppActor pid=263676)[39m wandb:                        eval/epoch ▁█
+[36m(ClientAppActor pid=263676)[39m wandb:                    eval/eval_loss ▁▅█
+[36m(ClientAppActor pid=263676)[39m wandb:  eval/eval_model_preparation_time ▁▁▁
+[36m(ClientAppActor pid=263676)[39m wandb:                 eval/eval_runtime ▁█▆
+[36m(ClientAppActor pid=263676)[39m wandb:      eval/eval_samples_per_second █▁▃
+[36m(ClientAppActor pid=263676)[39m wandb:        eval/eval_steps_per_second █▁▃
+[36m(ClientAppActor pid=263676)[39m wandb:                              iter ▁▁▁▂▂▃▄▅▅▅▅▆▇▇████
+[36m(ClientAppActor pid=263676)[39m wandb:                       train/epoch ▁▂▂▃▄▄▄▅▆▇▇███
+[36m(ClientAppActor pid=263676)[39m wandb:                   train/eval_loss ▁▅█
+[36m(ClientAppActor pid=263676)[39m wandb: train/eval_model_preparation_time ▁▁▁
+[36m(ClientAppActor pid=263676)[39m wandb:                train/eval_runtime ▁█▆
+[36m(ClientAppActor pid=263676)[39m wandb:     train/eval_samples_per_second █▁▃
+[36m(ClientAppActor pid=263676)[39m wandb:       train/eval_steps_per_second █▁▃
+[36m(ClientAppActor pid=263676)[39m wandb:                   train/grad_norm ▁▅▅▇▃█▅▆▆▂▂
+[36m(ClientAppActor pid=263676)[39m wandb:               train/learning_rate ██▇▇▆▅▃▂▂▁▁
+[36m(ClientAppActor pid=263676)[39m wandb:                        train/loss ▅▃▁▃▄▂▁▅█▁▁
+[36m(ClientAppActor pid=263676)[39m wandb:                  train/total_flos ▁
+[36m(ClientAppActor pid=263676)[39m wandb:                  train/train_loss ▁
+[36m(ClientAppActor pid=263676)[39m wandb:               train/train_runtime ▁
+[36m(ClientAppActor pid=263676)[39m wandb:    train/train_samples_per_second ▁
+[36m(ClientAppActor pid=263676)[39m wandb:      train/train_steps_per_second ▁
+[36m(ClientAppActor pid=263676)[39m wandb:
+[36m(ClientAppActor pid=263676)[39m wandb: Run summary:
+[36m(ClientAppActor pid=263676)[39m wandb:                        eval/epoch 10.0
+[36m(ClientAppActor pid=263676)[39m wandb:                    eval/eval_loss 2.13163
+[36m(ClientAppActor pid=263676)[39m wandb:  eval/eval_model_preparation_time 0.0009
+[36m(ClientAppActor pid=263676)[39m wandb:                 eval/eval_runtime 0.0237
+[36m(ClientAppActor pid=263676)[39m wandb:      eval/eval_samples_per_second 84.341
+[36m(ClientAppActor pid=263676)[39m wandb:        eval/eval_steps_per_second 42.17
+[36m(ClientAppActor pid=263676)[39m wandb:                              iter 2000
+[36m(ClientAppActor pid=263676)[39m wandb:                       train/epoch 10.0
+[36m(ClientAppActor pid=263676)[39m wandb:                   train/eval_loss 2.13163
+[36m(ClientAppActor pid=263676)[39m wandb: train/eval_model_preparation_time 0.0009
+[36m(ClientAppActor pid=263676)[39m wandb:                train/eval_runtime 0.0237
+[36m(ClientAppActor pid=263676)[39m wandb:     train/eval_samples_per_second 84.341
+[36m(ClientAppActor pid=263676)[39m wandb:       train/eval_steps_per_second 42.17
+[36m(ClientAppActor pid=263676)[39m wandb:                   train/grad_norm 22.73966
+[36m(ClientAppActor pid=263676)[39m wandb:               train/learning_rate 0.0
+[36m(ClientAppActor pid=263676)[39m wandb:                        train/loss 0.2682
+[36m(ClientAppActor pid=263676)[39m wandb:                  train/total_flos 8164464525312.0
+[36m(ClientAppActor pid=263676)[39m wandb:                  train/train_loss 0.84363
+[36m(ClientAppActor pid=263676)[39m wandb:               train/train_runtime 10.0492
+[36m(ClientAppActor pid=263676)[39m wandb:    train/train_samples_per_second 39.804
+[36m(ClientAppActor pid=263676)[39m wandb:      train/train_steps_per_second 9.951
+[36m(ClientAppActor pid=263676)[39m wandb:
+[36m(ClientAppActor pid=263676)[39m wandb: 🚀 View run uijo9p43_client_3 at: https://wandb.ai/camlsys/test-fl-memorization/runs/uijo9p43_client_3
+[36m(ClientAppActor pid=263676)[39m wandb: ⭐️ View project at: https://wandb.ai/camlsys/test-fl-memorization
+[36m(ClientAppActor pid=263676)[39m wandb: Synced 4 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+[36m(ClientAppActor pid=263676)[39m wandb: Find logs at: ./wandb/run-20241111_144847-uijo9p43_client_3/logs
+[36m(ClientAppActor pid=263676)[39m wandb: WARNING wandb version 0.18.6 is available!  To upgrade, please run:
+[36m(ClientAppActor pid=263676)[39m wandb: WARNING  $ pip install wandb --upgrade
+[36m(ClientAppActor pid=263676)[39m wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+[36m(ClientAppActor pid=263676)[39m wandb: - Waiting for wandb.init()...
+[36m(ClientAppActor pid=263676)[39m wandb: \ Waiting for wandb.init()...
+[36m(ClientAppActor pid=263676)[39m wandb: Tracking run with wandb version 0.17.9
+[36m(ClientAppActor pid=263676)[39m wandb: Run data is saved locally in /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144906-uijo9p43_client_6
+[36m(ClientAppActor pid=263676)[39m wandb: Run `wandb offline` to turn off syncing.
+[36m(ClientAppActor pid=263676)[39m wandb: Resuming run uijo9p43_client_6
+[36m(ClientAppActor pid=263676)[39m wandb: ⭐️ View project at https://wandb.ai/camlsys/test-fl-memorization
+[36m(ClientAppActor pid=263676)[39m wandb: 🚀 View run at https://wandb.ai/camlsys/test-fl-memorization/runs/uijo9p43_client_6
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8802, 'grad_norm': 69.3391342163086, 'learning_rate': 4.998766400914329e-05, 'epoch': 0.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.304, 'grad_norm': 108.57811737060547, 'learning_rate': 4.995066821070679e-05, 'epoch': 0.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.777, 'grad_norm': 82.43135070800781, 'learning_rate': 4.9889049115077005e-05, 'epoch': 0.3}
+[36m(ClientAppActor pid=263676)[39m /nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/datasets/utils/_dill.py:379: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
+[36m(ClientAppActor pid=263676)[39m   obj.co_lnotab,  # for < python 3.10 [not counted in args]
+[36m(ClientAppActor pid=263676)[39m /nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+[36m(ClientAppActor pid=263676)[39m   self.FromDatetime(datetime.datetime.utcnow())
+[36m(ClientAppActor pid=263676)[39m /nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/trl/trainer/sft_trainer.py:323: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `CustomSFTTrainer.__init__`. Use `processing_class` instead.
+[36m(ClientAppActor pid=263676)[39m   super().__init__(
+[36m(ClientAppActor pid=263676)[39m Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+[36m(ClientAppActor pid=263676)[39m max_steps is given, it will override any value given in num_train_epochs
+100%|██████████| 1/1 [00:00<00:00, 943.39it/s]
+  0%|          | 0/100 [00:00<?, ?it/s]
+  2%|▏         | 2/100 [00:00<00:06, 15.06it/s]
+  3%|▎         | 3/100 [00:00<00:06, 15.06it/s]
+  4%|▍         | 4/100 [00:00<00:08, 11.43it/s]
+  5%|▌         | 5/100 [00:00<00:08, 11.43it/s]
+  7%|▋         | 7/100 [00:00<00:08, 10.54it/s]
+  8%|▊         | 8/100 [00:00<00:08, 10.26it/s]
+  9%|▉         | 9/100 [00:00<00:08, 10.26it/s]
+ 10%|█         | 10/100 [00:00<00:08, 10.18it/s]
+ 11%|█         | 11/100 [00:01<00:08, 10.18it/s]
+ 13%|█▎        | 13/100 [00:01<00:08, 10.06it/s]
+ 14%|█▍        | 14/100 [00:01<00:08, 10.10it/s]
+ 15%|█▌        | 15/100 [00:01<00:08, 10.10it/s]
+ 17%|█▋        | 17/100 [00:01<00:08, 10.26it/s]
+ 18%|█▊        | 18/100 [00:01<00:07, 10.39it/s]
+ 19%|█▉        | 19/100 [00:01<00:07, 10.39it/s]
+ 20%|██        | 20/100 [00:01<00:07, 10.12it/s]
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7138, 'grad_norm': 63.96560287475586, 'learning_rate': 4.980286753286195e-05, 'epoch': 0.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.8903, 'grad_norm': 31.50580406188965, 'learning_rate': 4.9692208514878444e-05, 'epoch': 0.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.9335, 'grad_norm': 27.84320068359375, 'learning_rate': 4.9557181268217227e-05, 'epoch': 0.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.5909, 'grad_norm': 47.028167724609375, 'learning_rate': 4.939791904846869e-05, 'epoch': 0.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.26, 'grad_norm': 22.302196502685547, 'learning_rate': 4.9214579028215776e-05, 'epoch': 0.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.0062, 'grad_norm': 32.2269401550293, 'learning_rate': 4.900734214192358e-05, 'epoch': 0.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4216, 'grad_norm': 24.320241928100586, 'learning_rate': 4.877641290737884e-05, 'epoch': 1.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8007, 'grad_norm': 32.392086029052734, 'learning_rate': 4.852201922385564e-05, 'epoch': 1.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.6076, 'grad_norm': 21.277690887451172, 'learning_rate': 4.8244412147206284e-05, 'epoch': 1.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.3512, 'grad_norm': 74.72545623779297, 'learning_rate': 4.794386564209953e-05, 'epoch': 1.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.6102, 'grad_norm': 35.221614837646484, 'learning_rate': 4.762067631165049e-05, 'epoch': 1.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.5192, 'grad_norm': 34.06816864013672, 'learning_rate': 4.72751631047092e-05, 'epoch': 1.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.2395, 'grad_norm': 43.85208511352539, 'learning_rate': 4.690766700109659e-05, 'epoch': 1.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7129, 'grad_norm': 43.529449462890625, 'learning_rate': 4.65185506750986e-05, 'epoch': 1.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.9161, 'grad_norm': 20.82501792907715, 'learning_rate': 4.610819813755038e-05, 'epoch': 1.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.5315, 'grad_norm': 37.110191345214844, 'learning_rate': 4.567701435686404e-05, 'epoch': 1.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8252, 'grad_norm': 84.68916320800781, 'learning_rate': 4.522542485937369e-05, 'epoch': 2.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.2047, 'grad_norm': 24.86509895324707, 'learning_rate': 4.4753875309392266e-05, 'epoch': 2.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.5772, 'grad_norm': 33.46314239501953, 'learning_rate': 4.426283106939474e-05, 'epoch': 2.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.2566, 'grad_norm': 61.76108169555664, 'learning_rate': 4.375277674076149e-05, 'epoch': 2.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.688, 'grad_norm': 23.259416580200195, 'learning_rate': 4.3224215685535294e-05, 'epoch': 2.4}
+ 22%|██▏       | 22/100 [00:02<00:07, 10.25it/s]
+ 23%|██▎       | 23/100 [00:02<00:07, 10.25it/s]
+ 24%|██▍       | 24/100 [00:02<00:07, 10.04it/s]
+ 25%|██▌       | 25/100 [00:02<00:07, 10.04it/s]
+ 26%|██▌       | 26/100 [00:02<00:07, 10.04it/s]
+ 27%|██▋       | 27/100 [00:02<00:07, 10.04it/s]
+ 28%|██▊       | 28/100 [00:02<00:07, 10.12it/s]
+ 29%|██▉       | 29/100 [00:02<00:07, 10.12it/s]
+ 30%|███       | 30/100 [00:02<00:06, 10.09it/s]
+ 31%|███       | 31/100 [00:03<00:06, 10.09it/s]
+ 32%|███▏      | 32/100 [00:03<00:06,  9.88it/s]
+ 33%|███▎      | 33/100 [00:03<00:06,  9.88it/s]
+ 35%|███▌      | 35/100 [00:03<00:06, 10.07it/s]
+ 36%|███▌      | 36/100 [00:03<00:06, 10.04it/s]
+ 37%|███▋      | 37/100 [00:03<00:06, 10.04it/s]
+ 38%|███▊      | 38/100 [00:03<00:06,  9.92it/s]
+ 39%|███▉      | 39/100 [00:03<00:06,  9.92it/s]
+ 41%|████      | 41/100 [00:04<00:05, 10.04it/s]
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7248, 'grad_norm': 44.26412582397461, 'learning_rate': 4.267766952966369e-05, 'epoch': 2.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7896, 'grad_norm': 53.84189987182617, 'learning_rate': 4.211367764821722e-05, 'epoch': 2.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3126, 'grad_norm': 19.317771911621094, 'learning_rate': 4.1532796633091296e-05, 'epoch': 2.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.604, 'grad_norm': 39.35698699951172, 'learning_rate': 4.093559974371725e-05, 'epoch': 2.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6252, 'grad_norm': 20.603288650512695, 'learning_rate': 4.0322676341324415e-05, 'epoch': 2.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7028, 'grad_norm': 33.95402145385742, 'learning_rate': 3.969463130731183e-05, 'epoch': 3.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.6355, 'grad_norm': 22.078414916992188, 'learning_rate': 3.905208444630327e-05, 'epoch': 3.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4848, 'grad_norm': 20.324209213256836, 'learning_rate': 3.8395669874474915e-05, 'epoch': 3.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.2452, 'grad_norm': 24.169391632080078, 'learning_rate': 3.7726035393759285e-05, 'epoch': 3.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6794, 'grad_norm': 22.129148483276367, 'learning_rate': 3.704384185254288e-05, 'epoch': 3.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.6587, 'grad_norm': 29.542068481445312, 'learning_rate': 3.634976249348867e-05, 'epoch': 3.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.5294, 'grad_norm': 27.212177276611328, 'learning_rate': 3.564448228912682e-05, 'epoch': 3.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 3.3393, 'grad_norm': 55.331111907958984, 'learning_rate': 3.4928697265869515e-05, 'epoch': 3.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.3518, 'grad_norm': 26.615341186523438, 'learning_rate': 3.4203113817116957e-05, 'epoch': 3.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.5835, 'grad_norm': 29.861358642578125, 'learning_rate': 3.346844800613229e-05, 'epoch': 3.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4964, 'grad_norm': 29.169776916503906, 'learning_rate': 3.272542485937369e-05, 'epoch': 4.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.491, 'grad_norm': 57.207462310791016, 'learning_rate': 3.1974777650980735e-05, 'epoch': 4.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.6576, 'grad_norm': 42.46923828125, 'learning_rate': 3.121724717912138e-05, 'epoch': 4.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7998, 'grad_norm': 53.520545959472656, 'learning_rate': 3.045358103491357e-05, 'epoch': 4.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8466, 'grad_norm': 21.365707397460938, 'learning_rate': 2.9684532864643122e-05, 'epoch': 4.4}
+ 42%|████▏     | 42/100 [00:04<00:05,  9.82it/s]
+ 43%|████▎     | 43/100 [00:04<00:05,  9.67it/s]
+ 44%|████▍     | 44/100 [00:04<00:05,  9.67it/s]
+ 45%|████▌     | 45/100 [00:04<00:05,  9.90it/s]
+ 47%|████▋     | 47/100 [00:04<00:05, 10.08it/s]
+ 48%|████▊     | 48/100 [00:04<00:05, 10.08it/s]
+ 49%|████▉     | 49/100 [00:04<00:04, 10.33it/s]
+ 50%|█████     | 50/100 [00:04<00:04, 10.33it/s]
+ 51%|█████     | 51/100 [00:05<00:06,  8.14it/s]/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+[36m(ClientAppActor pid=263676)[39m   self.FromDatetime(datetime.datetime.utcnow())
+ 52%|█████▏    | 52/100 [00:05<00:05,  8.14it/s]
+ 54%|█████▍    | 54/100 [00:05<00:04,  9.49it/s]
+ 56%|█████▌    | 56/100 [00:05<00:03, 11.05it/s]
+ 58%|█████▊    | 58/100 [00:05<00:03, 12.23it/s]
+ 60%|██████    | 60/100 [00:05<00:02, 13.51it/s]
+ 62%|██████▏   | 62/100 [00:05<00:02, 14.60it/s]
+ 63%|██████▎   | 63/100 [00:05<00:02, 15.53it/s]
+ 65%|██████▌   | 65/100 [00:06<00:02, 15.58it/s]
+ 67%|██████▋   | 67/100 [00:06<00:02, 15.87it/s]
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4293, 'grad_norm': 27.175716400146484, 'learning_rate': 2.8910861626005776e-05, 'epoch': 4.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.2714, 'grad_norm': 44.53411865234375, 'learning_rate': 2.8133330839107608e-05, 'epoch': 4.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.2465, 'grad_norm': 34.583251953125, 'learning_rate': 2.7352707832962865e-05, 'epoch': 4.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.1691, 'grad_norm': 30.566139221191406, 'learning_rate': 2.656976298823284e-05, 'epoch': 4.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8594, 'grad_norm': 31.089208602905273, 'learning_rate': 2.578526897695321e-05, 'epoch': 4.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.8931, 'grad_norm': 35.63026428222656, 'learning_rate': 2.5e-05, 'epoch': 5.0}
+[36m(ClientAppActor pid=263676)[39m {'eval_loss': 3.028196334838867, 'eval_model_preparation_time': 0.0016, 'eval_runtime': 0.0161, 'eval_samples_per_second': 123.899, 'eval_steps_per_second': 61.95, 'epoch': 5.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 3.1964, 'grad_norm': 51.63998794555664, 'learning_rate': 2.4214731023046793e-05, 'epoch': 5.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.9438, 'grad_norm': 30.37792205810547, 'learning_rate': 2.3430237011767167e-05, 'epoch': 5.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.3231, 'grad_norm': 28.056446075439453, 'learning_rate': 2.2647292167037144e-05, 'epoch': 5.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.8083, 'grad_norm': 21.362632751464844, 'learning_rate': 2.186666916089239e-05, 'epoch': 5.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4653, 'grad_norm': 26.801759719848633, 'learning_rate': 2.1089138373994223e-05, 'epoch': 5.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.5272, 'grad_norm': 31.124439239501953, 'learning_rate': 2.031546713535688e-05, 'epoch': 5.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.2502, 'grad_norm': 21.615589141845703, 'learning_rate': 1.9546418965086442e-05, 'epoch': 5.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7753, 'grad_norm': 30.84450912475586, 'learning_rate': 1.8782752820878634e-05, 'epoch': 5.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.628, 'grad_norm': 28.675418853759766, 'learning_rate': 1.802522234901927e-05, 'epoch': 5.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.6669, 'grad_norm': 32.14447021484375, 'learning_rate': 1.7274575140626318e-05, 'epoch': 6.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8667, 'grad_norm': 37.116058349609375, 'learning_rate': 1.6531551993867717e-05, 'epoch': 6.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4015, 'grad_norm': 15.048151016235352, 'learning_rate': 1.5796886182883053e-05, 'epoch': 6.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.5408, 'grad_norm': 38.08830261230469, 'learning_rate': 1.5071302734130489e-05, 'epoch': 6.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7694, 'grad_norm': 34.87718200683594, 'learning_rate': 1.4355517710873184e-05, 'epoch': 6.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.2765, 'grad_norm': 31.112688064575195, 'learning_rate': 1.3650237506511331e-05, 'epoch': 6.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.8754, 'grad_norm': 28.929941177368164, 'learning_rate': 1.2956158147457115e-05, 'epoch': 6.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.9696, 'grad_norm': 56.04889678955078, 'learning_rate': 1.2273964606240718e-05, 'epoch': 6.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.9787, 'grad_norm': 30.225738525390625, 'learning_rate': 1.1604330125525079e-05, 'epoch': 6.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.1256, 'grad_norm': 34.82918167114258, 'learning_rate': 1.0947915553696742e-05, 'epoch': 6.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.5019, 'grad_norm': 50.762901306152344, 'learning_rate': 1.0305368692688174e-05, 'epoch': 7.0}
+ 69%|██████▉   | 69/100 [00:06<00:01, 15.78it/s]
+ 70%|███████   | 70/100 [00:06<00:01, 15.78it/s]
+ 71%|███████   | 71/100 [00:06<00:02, 13.99it/s]
+ 72%|███████▏  | 72/100 [00:06<00:02, 13.99it/s]
+ 73%|███████▎  | 73/100 [00:06<00:02, 12.62it/s]
+ 74%|███████▍  | 74/100 [00:06<00:02, 12.62it/s]
+ 75%|███████▌  | 75/100 [00:06<00:02, 11.44it/s]
+ 76%|███████▌  | 76/100 [00:06<00:02, 11.44it/s]
+ 77%|███████▋  | 77/100 [00:07<00:02, 11.11it/s]
+ 78%|███████▊  | 78/100 [00:07<00:01, 11.11it/s]
+ 79%|███████▉  | 79/100 [00:07<00:01, 10.56it/s]
+ 80%|████████  | 80/100 [00:07<00:01, 10.56it/s]
+ 81%|████████  | 81/100 [00:07<00:01, 10.32it/s]
+ 83%|████████▎ | 83/100 [00:07<00:01, 10.14it/s]
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.0333, 'grad_norm': 37.412376403808594, 'learning_rate': 9.677323658675594e-06, 'epoch': 7.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.1023, 'grad_norm': 33.89955139160156, 'learning_rate': 9.064400256282757e-06, 'epoch': 7.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.5851, 'grad_norm': 30.69232749938965, 'learning_rate': 8.467203366908707e-06, 'epoch': 7.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.536, 'grad_norm': 32.07012939453125, 'learning_rate': 7.886322351782783e-06, 'epoch': 7.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.9018, 'grad_norm': 67.07792663574219, 'learning_rate': 7.3223304703363135e-06, 'epoch': 7.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.0254, 'grad_norm': 30.258827209472656, 'learning_rate': 6.775784314464717e-06, 'epoch': 7.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.4232, 'grad_norm': 24.132314682006836, 'learning_rate': 6.247223259238511e-06, 'epoch': 7.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3747, 'grad_norm': 24.167367935180664, 'learning_rate': 5.737168930605272e-06, 'epoch': 7.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.3846, 'grad_norm': 30.29874610900879, 'learning_rate': 5.24612469060774e-06, 'epoch': 7.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.124, 'grad_norm': 30.350353240966797, 'learning_rate': 4.7745751406263165e-06, 'epoch': 8.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.5786, 'grad_norm': 26.093090057373047, 'learning_rate': 4.322985643135952e-06, 'epoch': 8.1}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.782, 'grad_norm': 43.37152862548828, 'learning_rate': 3.891801862449629e-06, 'epoch': 8.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.539, 'grad_norm': 34.37052536010742, 'learning_rate': 3.4814493249014116e-06, 'epoch': 8.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.3497, 'grad_norm': 25.68338394165039, 'learning_rate': 3.092332998903416e-06, 'epoch': 8.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7033, 'grad_norm': 29.308748245239258, 'learning_rate': 2.7248368952908053e-06, 'epoch': 8.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.0651, 'grad_norm': 23.07737159729004, 'learning_rate': 2.379323688349516e-06, 'epoch': 8.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.3855, 'grad_norm': 49.4060173034668, 'learning_rate': 2.0561343579004715e-06, 'epoch': 8.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.771, 'grad_norm': 28.785396575927734, 'learning_rate': 1.7555878527937164e-06, 'epoch': 8.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.8324, 'grad_norm': 34.0136604309082, 'learning_rate': 1.4779807761443636e-06, 'epoch': 8.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.1988, 'grad_norm': 31.513885498046875, 'learning_rate': 1.2235870926211619e-06, 'epoch': 9.0}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.8766, 'grad_norm': 24.74560546875, 'learning_rate': 9.926578580764234e-07, 'epoch': 9.1}
+ 84%|████████▍ | 84/100 [00:07<00:01, 10.14it/s]
+ 85%|████████▌ | 85/100 [00:07<00:01, 10.06it/s]
+ 87%|████████▋ | 87/100 [00:08<00:01, 10.26it/s]
+ 88%|████████▊ | 88/100 [00:08<00:01, 10.26it/s]
+ 89%|████████▉ | 89/100 [00:08<00:01,  9.99it/s]
+ 90%|█████████ | 90/100 [00:08<00:01,  9.99it/s]
+ 91%|█████████ | 91/100 [00:08<00:00, 10.00it/s]
+ 92%|█████████▏| 92/100 [00:08<00:00, 10.00it/s]
+ 94%|█████████▍| 94/100 [00:08<00:00,  9.98it/s]
+ 95%|█████████▌| 95/100 [00:08<00:00, 10.16it/s]
+ 96%|█████████▌| 96/100 [00:08<00:00, 10.16it/s]
+ 97%|█████████▋| 97/100 [00:09<00:00, 10.04it/s]
+ 99%|█████████▉| 99/100 [00:09<00:00,  9.91it/s]
+100%|██████████| 100/100 [00:09<00:00,  9.91it/s]
+[36m(ClientAppActor pid=263676)[39m /nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+[36m(ClientAppActor pid=263676)[39m   self.FromDatetime(datetime.datetime.utcnow())
+100%|██████████| 100/100 [00:09<00:00, 10.44it/s]
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.5774, 'grad_norm': 53.39795684814453, 'learning_rate': 7.854209717842231e-07, 'epoch': 9.2}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.392, 'grad_norm': 33.07809066772461, 'learning_rate': 6.020809515313142e-07, 'epoch': 9.3}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.3021, 'grad_norm': 40.76832580566406, 'learning_rate': 4.4281873178278475e-07, 'epoch': 9.4}
+[36m(ClientAppActor pid=263676)[39m {'loss': 0.261, 'grad_norm': 12.867608070373535, 'learning_rate': 3.077914851215585e-07, 'epoch': 9.5}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.3272, 'grad_norm': 21.723875045776367, 'learning_rate': 1.9713246713805588e-07, 'epoch': 9.6}
+[36m(ClientAppActor pid=263676)[39m {'loss': 2.2485, 'grad_norm': 38.673439025878906, 'learning_rate': 1.109508849230001e-07, 'epoch': 9.7}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.6179, 'grad_norm': 64.57555389404297, 'learning_rate': 4.9331789293211026e-08, 'epoch': 9.8}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.1368, 'grad_norm': 29.74840545654297, 'learning_rate': 1.233599085671e-08, 'epoch': 9.9}
+[36m(ClientAppActor pid=263676)[39m {'loss': 1.7351, 'grad_norm': 60.58481216430664, 'learning_rate': 0.0, 'epoch': 10.0}
+[36m(ClientAppActor pid=263676)[39m {'eval_loss': 3.0991687774658203, 'eval_model_preparation_time': 0.0016, 'eval_runtime': 0.0228, 'eval_samples_per_second': 87.688, 'eval_steps_per_second': 43.844, 'epoch': 10.0}
+[36m(ClientAppActor pid=263676)[39m {'train_runtime': 9.5789, 'train_samples_per_second': 41.758, 'train_steps_per_second': 10.44, 'train_loss': 1.3510572943091392, 'epoch': 10.0}
+[92mINFO [39m:      aggregate_fit: received 2 results and 0 failures

@@ -1,0 +1,92 @@
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/wandb/analytics/sentry.py:90: SentryHubDeprecationWarning: `sentry_sdk.Hub` is deprecated and will be removed in a future major release. Please consult our 1.x to 2.x migration guide for details on how to migrate `Hub` usage to the new API: https://docs.sentry.io/platforms/python/migration/1.x-to-2.x
+  self.hub = sentry_sdk.Hub(client)
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr_datasets/utils.py:109: UserWarning: The currently tested dataset are ['mnist', 'ylecun/mnist', 'cifar10', 'uoft-cs/cifar10', 'fashion_mnist', 'zalando-datasets/fashion_mnist', 'sasha/dog-food', 'zh-plus/tiny-imagenet', 'scikit-learn/adult-census-income', 'cifar100', 'uoft-cs/cifar100', 'svhn', 'ufldl-stanford/svhn', 'sentiment140', 'stanfordnlp/sentiment140', 'speech_commands', 'LIUM/tedlium', 'flwrlabs/femnist', 'flwrlabs/ucf101', 'flwrlabs/ambient-acoustic-context', 'jlh/uci-mushrooms', 'Mike0307/MNIST-M', 'flwrlabs/usps', 'scikit-learn/iris', 'flwrlabs/pacs', 'flwrlabs/cinic10', 'flwrlabs/caltech101', 'flwrlabs/office-home', 'flwrlabs/fed-isic2019']. Given: medalpaca/medical_meadow_medical_flashcards.
+  warnings.warn(
+[92mINFO [0m:      Starting Flower ServerApp, config: num_rounds=50, no round_timeout
+[92mINFO [0m:      
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Requesting initial parameters from one random client
+[36m(ClientAppActor pid=252073)[0m /nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/wandb/analytics/sentry.py:90: SentryHubDeprecationWarning: `sentry_sdk.Hub` is deprecated and will be removed in a future major release. Please consult our 1.x to 2.x migration guide for details on how to migrate `Hub` usage to the new API: https://docs.sentry.io/platforms/python/migration/1.x-to-2.x
+[36m(ClientAppActor pid=252073)[0m   self.hub = sentry_sdk.Hub(client)
+[92mINFO [0m:      Received initial parameters from one random client
+[92mINFO [0m:      Evaluating initial global parameters
+wandb: Currently logged in as: preslav-aleksandrov (camlsys). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.17.9
+wandb: Run data is saved locally in /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_142447-epx2xgsh_server
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run epx2xgsh_server
+wandb: ⭐️ View project at https://wandb.ai/camlsys/test-fl-memorization
+wandb: 🚀 View run at https://wandb.ai/camlsys/test-fl-memorization/runs/epx2xgsh_server
+2024-11-11 14:24:49,015	ERROR client.py:239 -- In eval function
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+2024-11-11 14:24:49,018	ERROR client.py:240 -- Config: {}
+2024-11-11 14:24:49,020	ERROR client.py:241 -- CFG: {'resume': False, 'checkpoint_path': '', 'wandb_server_id': 'server', 'group_id': 'fl', 'wandb_client_id': 'client', 'run_id': 'epx2xgsh', 'dataset': {'name': 'medalpaca/medical_meadow_medical_flashcards'}, 'model': {'name': 'EleutherAI/pythia-70m', 'tokenizer': 'EleutherAI/pythia-70m', 'quantization': 4, 'gradient_checkpointing': True, 'lora': {'peft_lora_r': 16, 'peft_lora_alpha': 64, 'target_modules': None}}, 'training_arguments': {'learning_rate': 5e-05, 'per_device_train_batch_size': 4, 'per_device_eval_batch_size': 4, 'gradient_accumulation_steps': 1, 'logging_steps': 1, 'max_steps': 100, 'eval_steps': 50, 'eval_delay': 0, 'save_steps': 50, 'save_total_limit': 10, 'gradient_checkpointing': True, 'gradient_checkpointing_kwargs': {'use_reentrant': False}, 'lr_scheduler_type': 'cosine', 'eval_strategy': 'steps', 'report_to': 'none', 'load_best_model_at_end': True}, 'train': {'save_every_round': 20, 'seq_length': 512, 'evaluate_split': True, 'learning_rate_max': 5e-05, 'learning_rate_min': 1e-06}, 'flower': {'num_clients': 10, 'fraction_fit': 0.2, 'num_rounds': 50, 'client_resources': {'num_cpus': 8, 'num_gpus': 1.0}}}
+2024-11-11 14:24:50,516	ERROR client.py:246 -- params set
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/datasets/utils/_dill.py:379: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
+  obj.co_lnotab,  # for < python 3.10 [not counted in args]
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+Map:   0%|          | 0/1700 [00:00<?, ? examples/s]Map:   0%|          | 0/1700 [00:00<?, ? examples/s]
+[91mERROR [0m:     ServerApp thread raised an exception: 'edge'
+[91mERROR [0m:     Traceback (most recent call last):
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/simulation/run_simulation.py", line 145, in server_th_with_start_checks
+    run(**kwargs)
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/run_serverapp.py", line 70, in run
+    server_app(driver=driver, context=context)
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server_app.py", line 73, in __call__
+    start_driver(
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/compat/app.py", line 90, in start_driver
+    hist = run_fl(
+           ^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server.py", line 490, in run_fl
+    hist, elapsed_time = server.fit(
+                         ^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server.py", line 95, in fit
+    res = self.strategy.evaluate(0, parameters=self.parameters)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/strategy/fedavg.py", line 167, in evaluate
+    eval_res = self.evaluate_fn(server_round, parameters_ndarrays, {})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs-share/pa511/llm_memorisation/finetune/client.py", line 254, in evaluate
+    trainer = CustomSFTTrainer(
+              ^^^^^^^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/trl/trainer/sft_trainer.py", line 283, in __init__
+    train_dataset = self._prepare_dataset(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/trl/trainer/sft_trainer.py", line 424, in _prepare_dataset
+    return self._prepare_non_packed_dataloader(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/trl/trainer/sft_trainer.py", line 492, in _prepare_non_packed_dataloader
+    tokenized_dataset = dataset.map(
+                        ^^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 602, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 567, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3161, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3552, in _map_single
+    batch = apply_function_on_filtered_inputs(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3421, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/trl/trainer/sft_trainer.py", line 463, in tokenize
+    element[dataset_text_field] if not use_formatting_func else formatting_func(element),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs-share/pa511/llm_memorisation/finetune/data_formatting.py", line 11, in formatting_prompts_func
+    for i in range(len(example['edge'])):
+                       ~~~~~~~^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/datasets/formatting/formatting.py", line 271, in __getitem__
+    value = self.data[key]
+            ~~~~~~~~~^^^^^
+KeyError: 'edge'
+
+wandb: - 0.010 MB of 0.010 MB uploadedwandb: \ 0.010 MB of 0.010 MB uploadedwandb: | 0.010 MB of 0.018 MB uploadedwandb: 🚀 View run epx2xgsh_server at: https://wandb.ai/camlsys/test-fl-memorization/runs/epx2xgsh_server
+wandb: ⭐️ View project at: https://wandb.ai/camlsys/test-fl-memorization
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20241111_142447-epx2xgsh_server/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.

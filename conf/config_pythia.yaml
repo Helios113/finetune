@@ -1,0 +1,46 @@
+---
+resume: False
+checkpoint_path: "/nfs-share/dc912/llm_memorisation/finetune/outputs/2024-10-29/17-15-16"
+wandb_id: "pythia_6_9B_01_pistol"
+dataset:
+  name: "medalpaca/medical_meadow_medical_flashcards"
+
+model:
+  name: "EleutherAI/pythia-6.9b"
+  tokenizer: "EleutherAI/pythia-6.9b"
+
+  quantization: 4 # 8 or 4 if you want to do quantization with BitsAndBytes
+  gradient_checkpointing: True # ! Ensure it matches that in train.train_arguments
+  lora:
+    peft_lora_r: 16
+    peft_lora_alpha: 64
+    target_modules: null
+    # target_modules: ["query_key_value"]
+
+
+training_arguments:
+  learning_rate: 5e-5
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4
+  gradient_accumulation_steps: 1
+  logging_steps: 400
+  max_steps: 8000
+  # num_train_epochs: 4
+  eval_steps: 400
+  eval_delay: 0
+  save_steps: 400
+  save_total_limit: 10
+  gradient_checkpointing: True # ! Ensure it matches that in model
+  gradient_checkpointing_kwargs:
+    use_reentrant: False
+  lr_scheduler_type: "cosine"
+  eval_strategy: "steps"
+  report_to: "wandb"
+  load_best_model_at_end: True
+
+
+train:
+  save_every_round: 20
+  seq_length: 512
+  evaluate_split: True
+  

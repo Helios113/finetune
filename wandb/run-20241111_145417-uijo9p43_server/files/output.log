@@ -1,0 +1,19 @@
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+2024-11-11 14:54:26,075	ERROR client.py:239 -- In eval function
+2024-11-11 14:54:26,076	ERROR client.py:240 -- Config: {}
+2024-11-11 14:54:26,077	ERROR client.py:241 -- CFG: {'resume': False, 'checkpoint_path': '', 'wandb_server_id': 'server', 'group_id': 'fl', 'wandb_client_id': 'client', 'run_id': 'uijo9p43', 'dataset': {'name': 'medalpaca/medical_meadow_medical_flashcards'}, 'model': {'name': 'EleutherAI/pythia-70m', 'tokenizer': 'EleutherAI/pythia-70m', 'quantization': 4, 'gradient_checkpointing': True, 'lora': {'peft_lora_r': 16, 'peft_lora_alpha': 64, 'target_modules': None}}, 'training_arguments': {'learning_rate': 5e-05, 'per_device_train_batch_size': 4, 'per_device_eval_batch_size': 4, 'gradient_accumulation_steps': 1, 'logging_steps': 1, 'max_steps': 100, 'eval_steps': 50, 'eval_delay': 0, 'save_steps': 50, 'save_total_limit': 10, 'gradient_checkpointing': True, 'gradient_checkpointing_kwargs': {'use_reentrant': False}, 'lr_scheduler_type': 'cosine', 'eval_strategy': 'steps', 'report_to': 'none', 'load_best_model_at_end': True}, 'train': {'save_every_round': 20, 'seq_length': 512, 'evaluate_split': True, 'learning_rate_max': 5e-05, 'learning_rate_min': 1e-06}, 'flower': {'num_clients': 10, 'fraction_fit': 0.2, 'num_rounds': 50, 'client_resources': {'num_cpus': 8, 'num_gpus': 1.0}}}
+2024-11-11 14:54:27,134	ERROR client.py:246 -- params set
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/datasets/utils/_dill.py:379: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
+  obj.co_lnotab,  # for < python 3.10 [not counted in args]
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/trl/trainer/sft_trainer.py:323: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `CustomSFTTrainer.__init__`. Use `processing_class` instead.
+  super().__init__(
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+max_steps is given, it will override any value given in num_train_epochs
+100%|██████████| 5/5 [00:00<00:00, 50.12it/s]
+[92mINFO [39m:      fit progress: (26, 0.0, {}, 1280.6337050469592)
+[92mINFO [39m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [39m:
+[92mINFO [39m:      [ROUND 27]

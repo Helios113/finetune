@@ -1,0 +1,5 @@
+[default]
+entity = camlsys
+project = llm-memorization
+base_url = https://api.wandb.ai
+

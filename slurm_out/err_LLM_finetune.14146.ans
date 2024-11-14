@@ -1,0 +1,137 @@
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:456: SyntaxWarning: invalid escape sequence '\.'
+  layer_index = re.match(f".*.{pattern}\.(\d+)\.*", key)
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/peft/tuners/lora/model.py:146: SyntaxWarning: invalid escape sequence '\.'
+  target_name_key = next(filter(lambda key: re.match(f".*\.{key}$", current_key), pattern_keys), current_key)
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/peft/tuners/lycoris_utils.py:230: SyntaxWarning: invalid escape sequence '\.'
+  target_name_key = next(filter(lambda key: re.match(f"(.*\.)?{key}$", current_key), pattern_keys), target_name)
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/wandb/analytics/sentry.py:90: SentryHubDeprecationWarning: `sentry_sdk.Hub` is deprecated and will be removed in a future major release. Please consult our 1.x to 2.x migration guide for details on how to migrate `Hub` usage to the new API: https://docs.sentry.io/platforms/python/migration/1.x-to-2.x
+  self.hub = sentry_sdk.Hub(client)
+/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr_datasets/utils.py:85: UserWarning: The currently tested dataset are ['mnist', 'cifar10', 'fashion_mnist', 'sasha/dog-food', 'zh-plus/tiny-imagenet']. Given: medalpaca/medical_meadow_medical_flashcards.
+  warnings.warn(
+[93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[93mWARNING [0m:   DEPRECATED FEATURE: Passing either `server`, `config`, `strategy` or `client_manager` directly to the ServerApp constructor is deprecated.
+
+            Check the following `FEATURE UPDATE` warning message for the preferred
+            new mechanism to use this feature in Flower.
+        
+[93mWARNING [0m:   FEATURE UPDATE: Pass `ServerApp` arguments wrapped in a `flwr.server.ServerAppComponents` object that gets returned by a function passed as the `server_fn` argument to the `ServerApp` constructor. For example: 
+        ------------------------------------------------------------
+        
+
+        def server_fn(context: Context):
+            server_config = ServerConfig(num_rounds=3)
+            strategy = FedAvg()
+            return ServerAppComponents(
+                strategy=strategy,
+                server_config=server_config,
+        )
+
+        app = ServerApp(server_fn=server_fn)
+
+        ------------------------------------------------------------
+        
+[92mINFO [0m:      Starting Flower ServerApp, config: num_rounds=50, no round_timeout
+[92mINFO [0m:      
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Requesting initial parameters from one random client
+[91mERROR [0m:     ServerApp thread raised an exception: list index out of range
+[91mERROR [0m:     Traceback (most recent call last):
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/simulation/run_simulation.py", line 336, in server_th_with_start_checks
+    run_server_app(
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/run_serverapp.py", line 87, in run
+    server_app(driver=driver, context=context)
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server_app.py", line 120, in __call__
+    start_driver(
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/compat/app.py", line 87, in start_driver
+    hist = run_fl(
+           ^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server.py", line 492, in run_fl
+    hist, elapsed_time = server.fit(
+                         ^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server.py", line 93, in fit
+    self.parameters = self._get_initial_parameters(server_round=0, timeout=timeout)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server.py", line 282, in _get_initial_parameters
+    random_client = self._client_manager.sample(1)[0]
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+Exception in thread Thread-2 (server_th_with_start_checks):
+Traceback (most recent call last):
+  File "/nfs-share/pa511/.pyenv/versions/3.12.0/lib/python3.12/threading.py", line 1052, in _bootstrap_inner
+    self.run()
+  File "/nfs-share/pa511/.pyenv/versions/3.12.0/lib/python3.12/threading.py", line 989, in run
+    self._target(*self._args, **self._kwargs)
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/simulation/run_simulation.py", line 336, in server_th_with_start_checks
+    run_server_app(
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/run_serverapp.py", line 87, in run
+    server_app(driver=driver, context=context)
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server_app.py", line 120, in __call__
+    start_driver(
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/compat/app.py", line 87, in start_driver
+    hist = run_fl(
+           ^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server.py", line 492, in run_fl
+    hist, elapsed_time = server.fit(
+                         ^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server.py", line 93, in fit
+    self.parameters = self._get_initial_parameters(server_round=0, timeout=timeout)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server.py", line 282, in _get_initial_parameters
+    random_client = self._client_manager.sample(1)[0]
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+[91mERROR [0m:     Backend `ray`, is not supported. Use any of [] or add support for a new backend.
+[91mERROR [0m:     Unable to import module `ray`.
+
+    To install the necessary dependencies, install `flwr` with the `simulation` extra:
+
+        pip install -U "flwr[simulation]"
+    
+[91mERROR [0m:     An exception occurred !! 'ray'
+[91mERROR [0m:     Traceback (most recent call last):
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/simulation/run_simulation.py", line 426, in _main_loop
+    vce.start_vce(
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/superlink/fleet/vce/vce_api.py", line 337, in start_vce
+    raise ex
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/superlink/fleet/vce/vce_api.py", line 325, in start_vce
+    backend_type = supported_backends[backend_name]
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'ray'
+
+Traceback (most recent call last):
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/simulation/run_simulation.py", line 426, in _main_loop
+    vce.start_vce(
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/superlink/fleet/vce/vce_api.py", line 337, in start_vce
+    raise ex
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/superlink/fleet/vce/vce_api.py", line 325, in start_vce
+    backend_type = supported_backends[backend_name]
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'ray'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/simulation/run_simulation.py", line 444, in _main_loop
+    raise RuntimeError("An error was encountered. Ending simulation.") from ex
+RuntimeError: An error was encountered. Ending simulation.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nfs-share/pa511/llm_memorisation/finetune/train_fl.py", line 111, in <module>
+    main()
+  File "/nfs-share/pa511/llm_memorisation/finetune/train_fl.py", line 102, in main
+    fl.simulation.run_simulation(
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/simulation/run_simulation.py", line 291, in run_simulation
+    _run_simulation(
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/simulation/run_simulation.py", line 558, in _run_simulation
+    _main_loop(*args)
+  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/simulation/run_simulation.py", line 453, in _main_loop
+    raise RuntimeError("Exception in ServerApp thread")
+RuntimeError: Exception in ServerApp thread
+srun: error: mauao: task 0: Exited with exit code 1

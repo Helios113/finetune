@@ -1,0 +1,227 @@
+2024-11-11 14:49:31,739 INFO    StreamThr :269016 [internal.py:wandb_internal():85] W&B internal server running at pid: 269016, started at: 2024-11-11 14:49:31.736122
+2024-11-11 14:49:31,743 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: status
+2024-11-11 14:49:31,745 INFO    WriterThread:269016 [datastore.py:open_for_write():87] open: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/run-uijo9p43_server.wandb
+2024-11-11 14:49:31,751 DEBUG   SenderThread:269016 [sender.py:send():391] send: header
+2024-11-11 14:49:31,751 DEBUG   SenderThread:269016 [sender.py:send():391] send: run
+2024-11-11 14:49:31,764 INFO    SenderThread:269016 [sender.py:_setup_resume():761] checking resume status for camlsys/test-fl-memorization/uijo9p43_server
+2024-11-11 14:49:32,015 INFO    SenderThread:269016 [sender.py:_setup_resume():841] configured resuming with: ResumeState(resumed=True,step=40,history=40,events=20,output=11192,runtime=876.961219,wandb_runtime=837,summary={'_runtime': 837.1671106815338, '_step': 39, '_timestamp': 1731336525.8312976, '_wandb': {'runtime': 837}, 'eval/eval_loss': 1.6436315774917605, 'eval/eval_model_preparation_time': 0.0012, 'eval/eval_runtime': 0.0972, 'eval/eval_samples_per_second': 205.721, 'eval/eval_steps_per_second': 51.43, 'iter': 1900, 'train/eval_loss': 1.6436315774917605, 'train/eval_model_preparation_time': 0.0012, 'train/eval_runtime': 0.0972, 'train/eval_samples_per_second': 205.721, 'train/eval_steps_per_second': 51.43},config={'_wandb': {'desc': None, 'value': {'m': [{'1': 'iter', '6': [3]}, {'1': 'train/eval_loss', '5': 1, '6': [1]}, {'1': 'train/eval_model_preparation_time', '5': 1, '6': [1]}, {'1': 'train/eval_runtime', '5': 1, '6': [1]}, {'1': 'train/eval_samples_per_second', '5': 1, '6': [1]}, {'1': 'train/eval_steps_per_second', '5': 1, '6': [1]}, {'1': 'eval/eval_loss', '5': 1, '6': [1]}, {'1': 'eval/eval_model_preparation_time', '5': 1, '6': [1]}, {'1': 'eval/eval_runtime', '5': 1, '6': [1]}, {'1': 'eval/eval_samples_per_second', '5': 1, '6': [1]}, {'1': 'eval/eval_steps_per_second', '5': 1, '6': [1]}], 't': {'1': [1, 5, 11, 30, 49, 51, 53, 55, 71, 84, 98, 105], '2': [1, 5, 11, 30, 49, 51, 53, 55, 71, 84, 98, 105], '3': [2, 5, 7, 14, 23, 62], '4': '3.12.0', '5': '0.17.9', '6': '4.46.2', '8': [5], '13': 'linux-x86_64'}, 'framework': 'huggingface', 'start_time': 1731336522, 'cli_version': '0.17.9', 'is_jupyter_run': False, 'python_version': '3.12.0', 'is_kaggle_kernel': False, 'huggingface_version': '4.46.2'}}},tags=[])
+2024-11-11 14:49:32,318 INFO    SenderThread:269016 [dir_watcher.py:__init__():211] watching files in: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files
+2024-11-11 14:49:32,319 INFO    SenderThread:269016 [sender.py:_start_run_threads():1200] run started: uijo9p43_server with start time 1731335693.820068
+2024-11-11 14:49:32,338 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: summary_record
+2024-11-11 14:49:32,342 INFO    SenderThread:269016 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-11 14:49:32,367 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: run_start
+2024-11-11 14:49:32,370 DEBUG   HandlerThread:269016 [system_info.py:__init__():26] System info init
+2024-11-11 14:49:32,370 DEBUG   HandlerThread:269016 [system_info.py:__init__():41] System info init done
+2024-11-11 14:49:32,370 INFO    HandlerThread:269016 [system_monitor.py:start():194] Starting system monitor
+2024-11-11 14:49:32,371 INFO    SystemMonitor:269016 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-11-11 14:49:32,372 INFO    SystemMonitor:269016 [interfaces.py:start():188] Started cpu monitoring
+2024-11-11 14:49:32,373 INFO    SystemMonitor:269016 [interfaces.py:start():188] Started disk monitoring
+2024-11-11 14:49:32,374 INFO    SystemMonitor:269016 [interfaces.py:start():188] Started gpu monitoring
+2024-11-11 14:49:32,375 INFO    SystemMonitor:269016 [interfaces.py:start():188] Started memory monitoring
+2024-11-11 14:49:32,377 INFO    SystemMonitor:269016 [interfaces.py:start():188] Started network monitoring
+2024-11-11 14:49:32,657 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: python_packages
+2024-11-11 14:49:32,658 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: python_packages
+2024-11-11 14:49:32,660 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-11 14:49:32,663 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: stop_status
+2024-11-11 14:49:32,664 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-11 14:49:32,906 DEBUG   SenderThread:269016 [sender.py:send():391] send: telemetry
+2024-11-11 14:49:32,907 DEBUG   SenderThread:269016 [sender.py:send():391] send: telemetry
+2024-11-11 14:49:32,907 DEBUG   SenderThread:269016 [sender.py:send():391] send: metric
+2024-11-11 14:49:32,908 DEBUG   SenderThread:269016 [sender.py:send():391] send: metric
+2024-11-11 14:49:32,908 WARNING SenderThread:269016 [sender.py:send_metric():1417] Seen metric with glob (shouldn't happen)
+2024-11-11 14:49:32,908 DEBUG   SenderThread:269016 [sender.py:send():391] send: metric
+2024-11-11 14:49:32,908 WARNING SenderThread:269016 [sender.py:send_metric():1417] Seen metric with glob (shouldn't happen)
+2024-11-11 14:49:33,322 INFO    Thread-253:269016 [dir_watcher.py:_on_file_created():271] file/dir created: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/requirements.txt
+2024-11-11 14:49:33,322 INFO    Thread-253:269016 [dir_watcher.py:_on_file_created():271] file/dir created: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/wandb-summary.json
+2024-11-11 14:49:33,323 INFO    Thread-253:269016 [dir_watcher.py:_on_file_created():271] file/dir created: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:49:33,846 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-11 14:49:33,849 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-11 14:49:33,857 DEBUG   SenderThread:269016 [sender.py:send():391] send: metric
+2024-11-11 14:49:33,858 DEBUG   SenderThread:269016 [sender.py:send():391] send: metric
+2024-11-11 14:49:33,859 DEBUG   SenderThread:269016 [sender.py:send():391] send: metric
+2024-11-11 14:49:33,859 DEBUG   SenderThread:269016 [sender.py:send():391] send: metric
+2024-11-11 14:49:33,860 DEBUG   SenderThread:269016 [sender.py:send():391] send: metric
+2024-11-11 14:49:33,860 DEBUG   SenderThread:269016 [sender.py:send():391] send: history
+2024-11-11 14:49:33,861 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: summary_record
+2024-11-11 14:49:33,866 INFO    SenderThread:269016 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-11 14:49:33,868 DEBUG   SenderThread:269016 [sender.py:send():391] send: metric
+2024-11-11 14:49:33,868 DEBUG   SenderThread:269016 [sender.py:send():391] send: metric
+2024-11-11 14:49:33,868 DEBUG   SenderThread:269016 [sender.py:send():391] send: metric
+2024-11-11 14:49:33,869 DEBUG   SenderThread:269016 [sender.py:send():391] send: metric
+2024-11-11 14:49:33,869 DEBUG   SenderThread:269016 [sender.py:send():391] send: metric
+2024-11-11 14:49:33,869 DEBUG   SenderThread:269016 [sender.py:send():391] send: history
+2024-11-11 14:49:33,870 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: summary_record
+2024-11-11 14:49:33,875 INFO    SenderThread:269016 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-11 14:49:34,322 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/wandb-summary.json
+2024-11-11 14:49:35,325 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:49:36,921 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: status_report
+2024-11-11 14:49:37,331 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:49:41,339 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:49:42,545 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: status_report
+2024-11-11 14:49:42,659 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-11 14:49:43,345 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:49:45,349 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:49:47,352 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:49:47,547 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: status_report
+2024-11-11 14:49:47,658 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-11 14:49:47,659 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: stop_status
+2024-11-11 14:49:49,357 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:49:51,370 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:49:52,647 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: status_report
+2024-11-11 14:49:52,659 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-11 14:49:53,376 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:49:55,380 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:49:57,384 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:49:57,661 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: status_report
+2024-11-11 14:49:59,388 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:50:01,393 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:50:02,658 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-11 14:50:02,659 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: stop_status
+2024-11-11 14:50:02,662 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-11 14:50:02,873 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: status_report
+2024-11-11 14:50:03,398 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/config.yaml
+2024-11-11 14:50:03,398 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:50:05,402 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:50:07,408 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:50:08,215 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: status_report
+2024-11-11 14:50:09,411 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:50:11,430 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:50:12,660 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-11 14:50:13,278 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: status_report
+2024-11-11 14:50:13,452 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:50:14,281 DEBUG   SenderThread:269016 [sender.py:send():391] send: telemetry
+2024-11-11 14:50:14,283 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: check_version
+2024-11-11 14:50:14,283 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: check_version
+2024-11-11 14:50:14,356 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: server_info
+2024-11-11 14:50:14,356 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: server_info
+2024-11-11 14:50:14,609 DEBUG   SenderThread:269016 [sender.py:send():391] send: exit
+2024-11-11 14:50:14,609 INFO    SenderThread:269016 [sender.py:send_exit():598] handling exit code: 0
+2024-11-11 14:50:14,609 INFO    SenderThread:269016 [sender.py:send_exit():600] handling runtime: 879
+2024-11-11 14:50:14,614 INFO    SenderThread:269016 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-11 14:50:14,616 INFO    SenderThread:269016 [sender.py:send_exit():606] send defer
+2024-11-11 14:50:14,616 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:14,616 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 0
+2024-11-11 14:50:14,617 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:14,617 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-11-11 14:50:14,618 INFO    SenderThread:269016 [sender.py:transition_state():626] send defer: 1
+2024-11-11 14:50:14,618 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:14,618 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 1
+2024-11-11 14:50:14,619 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:14,619 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-11-11 14:50:14,620 INFO    SenderThread:269016 [sender.py:transition_state():626] send defer: 2
+2024-11-11 14:50:14,620 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:14,620 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 2
+2024-11-11 14:50:14,620 INFO    HandlerThread:269016 [system_monitor.py:finish():203] Stopping system monitor
+2024-11-11 14:50:14,621 DEBUG   SystemMonitor:269016 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-11-11 14:50:14,624 DEBUG   SystemMonitor:269016 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-11-11 14:50:14,624 INFO    HandlerThread:269016 [interfaces.py:finish():200] Joined cpu monitor
+2024-11-11 14:50:14,625 DEBUG   SystemMonitor:269016 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-11-11 14:50:14,625 INFO    HandlerThread:269016 [interfaces.py:finish():200] Joined disk monitor
+2024-11-11 14:50:14,898 INFO    HandlerThread:269016 [interfaces.py:finish():200] Joined gpu monitor
+2024-11-11 14:50:14,899 INFO    HandlerThread:269016 [interfaces.py:finish():200] Joined memory monitor
+2024-11-11 14:50:14,899 INFO    HandlerThread:269016 [interfaces.py:finish():200] Joined network monitor
+2024-11-11 14:50:14,900 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:14,900 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-11-11 14:50:14,900 INFO    SenderThread:269016 [sender.py:transition_state():626] send defer: 3
+2024-11-11 14:50:14,901 DEBUG   SenderThread:269016 [sender.py:send():391] send: stats
+2024-11-11 14:50:14,901 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:14,904 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 3
+2024-11-11 14:50:14,905 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:14,905 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-11-11 14:50:14,905 INFO    SenderThread:269016 [sender.py:transition_state():626] send defer: 4
+2024-11-11 14:50:14,906 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:14,906 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 4
+2024-11-11 14:50:14,906 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:14,907 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-11-11 14:50:14,907 INFO    SenderThread:269016 [sender.py:transition_state():626] send defer: 5
+2024-11-11 14:50:14,907 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:14,907 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 5
+2024-11-11 14:50:14,908 DEBUG   SenderThread:269016 [sender.py:send():391] send: summary
+2024-11-11 14:50:14,913 INFO    SenderThread:269016 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-11 14:50:14,914 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:14,915 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-11-11 14:50:14,915 INFO    SenderThread:269016 [sender.py:transition_state():626] send defer: 6
+2024-11-11 14:50:14,915 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:14,915 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 6
+2024-11-11 14:50:14,916 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:14,916 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-11-11 14:50:14,922 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: status_report
+2024-11-11 14:50:15,111 INFO    SenderThread:269016 [sender.py:transition_state():626] send defer: 7
+2024-11-11 14:50:15,111 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:15,111 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 7
+2024-11-11 14:50:15,112 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:15,112 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-11-11 14:50:15,456 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/wandb-summary.json
+2024-11-11 14:50:15,457 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/config.yaml
+2024-11-11 14:50:15,458 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:50:15,609 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-11 14:50:15,809 INFO    SenderThread:269016 [sender.py:transition_state():626] send defer: 8
+2024-11-11 14:50:15,809 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: poll_exit
+2024-11-11 14:50:15,809 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:15,810 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 8
+2024-11-11 14:50:15,811 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:15,811 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-11-11 14:50:15,811 INFO    SenderThread:269016 [job_builder.py:build():443] Attempting to build job artifact
+2024-11-11 14:50:15,812 WARNING SenderThread:269016 [job_builder.py:_log_if_verbose():274] Ensure read and write access to run files dir: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files, control this via the WANDB_DIR env var. See https://docs.wandb.ai/guides/track/environment-variables
+2024-11-11 14:50:15,813 INFO    SenderThread:269016 [sender.py:transition_state():626] send defer: 9
+2024-11-11 14:50:15,813 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:15,813 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 9
+2024-11-11 14:50:15,814 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:15,814 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-11-11 14:50:15,814 INFO    SenderThread:269016 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-11-11 14:50:16,458 INFO    Thread-253:269016 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:50:16,460 INFO    SenderThread:269016 [dir_watcher.py:finish():388] scan: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files
+2024-11-11 14:50:16,461 INFO    SenderThread:269016 [dir_watcher.py:finish():402] scan save: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/requirements.txt requirements.txt
+2024-11-11 14:50:16,461 INFO    SenderThread:269016 [dir_watcher.py:finish():402] scan save: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log output.log
+2024-11-11 14:50:16,467 INFO    SenderThread:269016 [dir_watcher.py:finish():402] scan save: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/wandb-summary.json wandb-summary.json
+2024-11-11 14:50:16,479 INFO    SenderThread:269016 [dir_watcher.py:finish():402] scan save: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/config.yaml config.yaml
+2024-11-11 14:50:16,490 INFO    SenderThread:269016 [sender.py:transition_state():626] send defer: 10
+2024-11-11 14:50:16,490 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:16,490 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 10
+2024-11-11 14:50:16,497 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:16,500 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-11-11 14:50:16,501 INFO    SenderThread:269016 [file_pusher.py:finish():169] shutting down file pusher
+2024-11-11 14:50:16,610 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-11 14:50:16,611 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: poll_exit
+2024-11-11 14:50:16,902 INFO    wandb-upload_0:269016 [upload_job.py:push():130] Uploaded file /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/requirements.txt
+2024-11-11 14:50:16,938 INFO    wandb-upload_2:269016 [upload_job.py:push():130] Uploaded file /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/wandb-summary.json
+2024-11-11 14:50:16,968 INFO    wandb-upload_3:269016 [upload_job.py:push():130] Uploaded file /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/config.yaml
+2024-11-11 14:50:17,088 INFO    wandb-upload_1:269016 [upload_job.py:push():130] Uploaded file /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/files/output.log
+2024-11-11 14:50:17,289 INFO    Thread-252 (_thread_body):269016 [sender.py:transition_state():626] send defer: 11
+2024-11-11 14:50:17,290 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:17,291 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 11
+2024-11-11 14:50:17,291 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:17,292 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-11-11 14:50:17,292 INFO    SenderThread:269016 [file_pusher.py:join():175] waiting for file pusher
+2024-11-11 14:50:17,292 INFO    SenderThread:269016 [sender.py:transition_state():626] send defer: 12
+2024-11-11 14:50:17,293 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:17,293 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 12
+2024-11-11 14:50:17,294 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:17,294 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-11-11 14:50:17,294 INFO    SenderThread:269016 [file_stream.py:finish():601] file stream finish called
+2024-11-11 14:50:17,611 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-11 14:50:17,763 INFO    SenderThread:269016 [file_stream.py:finish():605] file stream finish is done
+2024-11-11 14:50:17,764 INFO    SenderThread:269016 [sender.py:transition_state():626] send defer: 13
+2024-11-11 14:50:17,764 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: poll_exit
+2024-11-11 14:50:17,765 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:17,765 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 13
+2024-11-11 14:50:17,766 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:17,766 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-11-11 14:50:17,767 INFO    SenderThread:269016 [sender.py:transition_state():626] send defer: 14
+2024-11-11 14:50:17,768 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: defer
+2024-11-11 14:50:17,768 INFO    HandlerThread:269016 [handler.py:handle_request_defer():184] handle defer: 14
+2024-11-11 14:50:17,768 DEBUG   SenderThread:269016 [sender.py:send():391] send: final
+2024-11-11 14:50:17,769 DEBUG   SenderThread:269016 [sender.py:send():391] send: footer
+2024-11-11 14:50:17,769 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: defer
+2024-11-11 14:50:17,770 INFO    SenderThread:269016 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-11-11 14:50:17,772 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-11 14:50:17,772 DEBUG   SenderThread:269016 [sender.py:send_request():418] send_request: poll_exit
+2024-11-11 14:50:17,774 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-11 14:50:17,776 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: get_summary
+2024-11-11 14:50:17,777 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: sampled_history
+2024-11-11 14:50:17,780 DEBUG   HandlerThread:269016 [handler.py:handle_request():158] handle_request: shutdown
+2024-11-11 14:50:17,781 INFO    HandlerThread:269016 [handler.py:finish():884] shutting down handler
+2024-11-11 14:50:18,772 INFO    WriterThread:269016 [datastore.py:close():296] close: /nfs-share/pa511/llm_memorisation/finetune/wandb/run-20241111_144925-uijo9p43_server/run-uijo9p43_server.wandb
+2024-11-11 14:50:18,773 INFO    SenderThread:269016 [sender.py:finish():1631] shutting down sender
+2024-11-11 14:50:18,773 INFO    SenderThread:269016 [file_pusher.py:finish():169] shutting down file pusher
+2024-11-11 14:50:18,773 INFO    SenderThread:269016 [file_pusher.py:join():175] waiting for file pusher

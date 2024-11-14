@@ -1,0 +1,47 @@
+---
+resume: True
+checkpoint_path: "/nfs-share/pa511/developments/sft_trainer/outputs/2024-06-03/13-41-27/checkpoint-3600"
+wandb_id: "<>"
+dataset:
+  name: "medalpaca/medical_meadow_medical_flashcards"
+
+model:
+  name: "EleutherAI/pythia-70M"
+  tokenizer: "EleutherAI/pythia-70M"
+
+  quantization: 4 # 8 or 4 if you want to do quantization with BitsAndBytes
+  gradient_checkpointing: True # ! Ensure it matches that in train.train_arguments
+  lora:
+    peft_lora_r: 16
+    peft_lora_alpha: 64
+    target_modules: null
+    # target_modules: ["query_key_value"]
+
+
+training_arguments:
+  learning_rate: 5e-5
+  per_device_train_batch_size: 8
+  per_device_eval_batch_size: 8
+  gradient_accumulation_steps: 1
+  logging_steps: 300
+  # max_steps: 6000
+  num_train_epochs: 4
+  eval_steps: 300
+  eval_delay: 0
+  save_steps: 300
+  save_total_limit: 10
+  gradient_checkpointing: True # ! Ensure it matches that in model
+  gradient_checkpointing_kwargs:
+    use_reentrant: False
+  lr_scheduler_type: "cosine"
+  eval_strategy: "steps"
+  # report_to: "wandb"
+  load_best_model_at_end: True
+  dataloader_drop_last: True
+
+
+train:
+  save_every_round: 20
+  seq_length: 512
+  evaluate_split: True
+  

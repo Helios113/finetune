@@ -1,5 +1,0 @@
-  File "/nfs-share/pa511/llm_memorisation/finetune/train_fl.py", line 39
-    dataset=cfg.dataset.name, partitioners={"train": partitioner, data_files="/nfs-share/pa511/llm_memorisation/datasets/medical_dataset/deduplicated_medical_meadow_flashcards.json"}
-                                                                           ^
-SyntaxError: ':' expected after dictionary key
-srun: error: mauao: task 0: Exited with exit code 1

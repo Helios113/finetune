@@ -1,31 +1,0 @@
-/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/wandb/analytics/sentry.py:90: SentryHubDeprecationWarning: `sentry_sdk.Hub` is deprecated and will be removed in a future major release. Please consult our 1.x to 2.x migration guide for details on how to migrate `Hub` usage to the new API: https://docs.sentry.io/platforms/python/migration/1.x-to-2.x
-  self.hub = sentry_sdk.Hub(client)
-/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr_datasets/utils.py:109: UserWarning: The currently tested dataset are ['mnist', 'ylecun/mnist', 'cifar10', 'uoft-cs/cifar10', 'fashion_mnist', 'zalando-datasets/fashion_mnist', 'sasha/dog-food', 'zh-plus/tiny-imagenet', 'scikit-learn/adult-census-income', 'cifar100', 'uoft-cs/cifar100', 'svhn', 'ufldl-stanford/svhn', 'sentiment140', 'stanfordnlp/sentiment140', 'speech_commands', 'LIUM/tedlium', 'flwrlabs/femnist', 'flwrlabs/ucf101', 'flwrlabs/ambient-acoustic-context', 'jlh/uci-mushrooms', 'Mike0307/MNIST-M', 'flwrlabs/usps', 'scikit-learn/iris', 'flwrlabs/pacs', 'flwrlabs/cinic10', 'flwrlabs/caltech101', 'flwrlabs/office-home', 'flwrlabs/fed-isic2019']. Given: medalpaca/medical_meadow_medical_flashcards.
-  warnings.warn(
-Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 33528 examples [00:00, 126010.20 examples/s]Generating train split: 33528 examples [00:00, 104794.62 examples/s]
-[92mINFO [0m:      Starting Flower ServerApp, config: num_rounds=50, no round_timeout
-[92mINFO [0m:      
-[92mINFO [0m:      [INIT]
-[92mINFO [0m:      Requesting initial parameters from one random client
-[91mERROR [0m:     ServerApp thread raised an exception: list index out of range
-[91mERROR [0m:     Traceback (most recent call last):
-  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/simulation/run_simulation.py", line 145, in server_th_with_start_checks
-    run(**kwargs)
-  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/run_serverapp.py", line 70, in run
-    server_app(driver=driver, context=context)
-  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server_app.py", line 73, in __call__
-    start_driver(
-  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/compat/app.py", line 90, in start_driver
-    hist = run_fl(
-           ^^^^^^^
-  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server.py", line 490, in run_fl
-    hist, elapsed_time = server.fit(
-                         ^^^^^^^^^^^
-  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server.py", line 93, in fit
-    self.parameters = self._get_initial_parameters(server_round=0, timeout=timeout)
-                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/nfs-share/pa511/.cache/pypoetry/virtualenvs/llm-memorization1-iHoaSaFW-py3.12/lib/python3.12/site-packages/flwr/server/server.py", line 280, in _get_initial_parameters
-    random_client = self._client_manager.sample(1)[0]
-                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
-IndexError: list index out of range
-

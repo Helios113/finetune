@@ -7,6 +7,7 @@ wandb_client_id: "client"
 run_id: "test22"
 dataset:
   name: "medalpaca/medical_meadow_medical_flashcards"
+  files: 
 
 model:
   name: "EleutherAI/pythia-70m"
